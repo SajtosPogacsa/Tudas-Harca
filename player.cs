@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Tudás_Harca
 {
-    internal class player
+    internal class Player
     {
         public int hp { get; set; }
+        public int dmg { get; set; }
+        public string name { get; set; }
+
     }
 }

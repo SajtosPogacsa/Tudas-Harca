@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             charPbx = new PictureBox();
             monsterPbx = new PictureBox();
             perk1Btn = new Button();
@@ -46,17 +47,21 @@
             // 
             // charPbx
             // 
-            charPbx.Location = new Point(83, 12);
+            charPbx.Image = (Image)resources.GetObject("charPbx.Image");
+            charPbx.ImageLocation = "H:\\repos\\Tudás Harca\\Resources\\pixel jo.png";
+            charPbx.Location = new Point(41, 12);
             charPbx.Name = "charPbx";
-            charPbx.Size = new Size(134, 171);
+            charPbx.Size = new Size(200, 200);
             charPbx.TabIndex = 0;
             charPbx.TabStop = false;
             // 
             // monsterPbx
             // 
-            monsterPbx.Location = new Point(391, 12);
+            monsterPbx.Image = (Image)resources.GetObject("monsterPbx.Image");
+            monsterPbx.ImageLocation = "H:\\repos\\Tudás Harca\\Resources\\enemy1.png";
+            monsterPbx.Location = new Point(359, 11);
             monsterPbx.Name = "monsterPbx";
-            monsterPbx.Size = new Size(134, 171);
+            monsterPbx.Size = new Size(200, 200);
             monsterPbx.TabIndex = 0;
             monsterPbx.TabStop = false;
             // 
@@ -89,8 +94,9 @@
             // 
             // questionLbl
             // 
+            questionLbl.BackColor = SystemColors.ButtonFace;
             questionLbl.Font = new Font("Segoe UI", 12F);
-            questionLbl.Location = new Point(32, 312);
+            questionLbl.Location = new Point(31, 312);
             questionLbl.Name = "questionLbl";
             questionLbl.Size = new Size(547, 62);
             questionLbl.TabIndex = 2;
@@ -136,7 +142,8 @@
             // plrHpLbl
             // 
             plrHpLbl.AutoSize = true;
-            plrHpLbl.Location = new Point(114, 196);
+            plrHpLbl.BackColor = SystemColors.ButtonFace;
+            plrHpLbl.Location = new Point(88, 216);
             plrHpLbl.Name = "plrHpLbl";
             plrHpLbl.Size = new Size(73, 15);
             plrHpLbl.TabIndex = 4;
@@ -145,7 +152,8 @@
             // enemyHpBtn
             // 
             enemyHpBtn.AutoSize = true;
-            enemyHpBtn.Location = new Point(409, 196);
+            enemyHpBtn.BackColor = SystemColors.ButtonFace;
+            enemyHpBtn.Location = new Point(411, 214);
             enemyHpBtn.Name = "enemyHpBtn";
             enemyHpBtn.Size = new Size(98, 15);
             enemyHpBtn.TabIndex = 4;
@@ -155,7 +163,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(599, 612);
+            BackColor = SystemColors.ControlDarkDark;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(604, 611);
             Controls.Add(enemyHpBtn);
             Controls.Add(plrHpLbl);
             Controls.Add(answ4Btn);
