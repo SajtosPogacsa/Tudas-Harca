@@ -5,6 +5,7 @@ namespace Tudás_Harca
         List<Question> questionList = [];
         List<Enemy> enemyList = [];
         Random rnd = new Random();
+        Question q;
         public frmMain()
         {
             InitializeComponent();
@@ -17,7 +18,7 @@ namespace Tudás_Harca
             while (!sr.EndOfStream) 
             {
                 String[] data = sr.ReadLine().Split(";");
-                Question q = new Question(data[1], data[2], data[3], data[4], data[5]);
+                Question q = new Question(data[0], data[1], data[2], data[3], data[4], int.Parse(data[5]) - 1);
                 questionList.Add(q);
             }
             enemyList.Add(new Enemy("kis haver1", 3, 1, @"H:\\repos\\Tudás Harca\\Resources\\enemy1.png"));
@@ -28,7 +29,12 @@ namespace Tudás_Harca
 
         private void initQuestion()
         {
-            questionLbl.Text = questionList[rnd.Next(questionList.Count)].prompt;
+            q = questionList[rnd.Next(questionList.Count)];
+            questionLbl.Text = q.prompt;
+            answ1Btn.Text = q.answer1;
+            answ2Btn.Text = q.answer2;
+            answ3Btn.Text = q.answer3;
+            answ4Btn.Text = q.answer4;
         }
     }
 }
