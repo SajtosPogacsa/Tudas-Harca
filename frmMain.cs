@@ -1,3 +1,5 @@
+using System.Drawing.Text;
+
 namespace Tudás_Harca
 {
     public partial class frmMain : Form
@@ -10,6 +12,21 @@ namespace Tudás_Harca
         {
             InitializeComponent();
             this.Load += FrmMainLoad;
+            answ1Btn.Click += AnswBtnClick;
+            answ2Btn.Click += AnswBtnClick;
+            answ3Btn.Click += AnswBtnClick;
+            answ4Btn.Click += AnswBtnClick;
+        }
+
+        private void AnswBtnClick(object? sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (btn.Text == q.correct.Trim())
+            {
+                btn.BackColor = Color.Green;
+            }
+
+  
         }
 
         private void FrmMainLoad(object? sender, EventArgs e)
@@ -18,7 +35,7 @@ namespace Tudás_Harca
             while (!sr.EndOfStream) 
             {
                 String[] data = sr.ReadLine().Split(";");
-                Question q = new Question(data[0], data[1], data[2], data[3], data[4], int.Parse(data[5]) - 1);
+                Question q = new Question(data[0], data[1], data[2], data[3], data[4], data[5]);
                 questionList.Add(q);
             }
             enemyList.Add(new Enemy("kis haver1", 3, 1, @"H:\\repos\\Tudás Harca\\Resources\\enemy1.png"));
@@ -32,9 +49,13 @@ namespace Tudás_Harca
             q = questionList[rnd.Next(questionList.Count)];
             questionLbl.Text = q.prompt;
             answ1Btn.Text = q.answer1;
+            answ1Btn.BackColor = Control.DefaultBackColor;
             answ2Btn.Text = q.answer2;
+            answ2Btn.BackColor = Control.DefaultBackColor;
             answ3Btn.Text = q.answer3;
+            answ3Btn.BackColor = Control.DefaultBackColor;
             answ4Btn.Text = q.answer4;
+            answ4Btn.BackColor = Control.DefaultBackColor;
         }
     }
 }

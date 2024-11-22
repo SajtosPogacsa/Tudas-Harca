@@ -1,100 +1,100 @@
-Melyik bolygó a Naprendszer legnagyobb bolygója?;Föld;Mars;Jupiter;Szaturnusz;4
-Hány szín van a szivárványban?;5;6;7;8;4
-Melyik a világ legmagasabb hegye?;Kilimandzsáró;Mont Blanc;Mount Everest;K2;4
-Mi a fővárosa Kanadának?;Toronto;Ottawa;Vancouver;Montreal;3
-Ki írta a "Harry Potter" könyveket?;J.R.R. Tolkien;J.K. Rowling;Suzanne Collins;George R.R. Martin;3
-Mi a világ legnagyobb óceánja?;Atlanti-óceán;Indiai-óceán;Csendes-óceán;Jeges-tenger;4
-Melyik állat nem emlős?;Delfin;Cápa;Bálna;Denevér;3
-Mi a fotoszintézis fő terméke?;Oxigén;Szén-dioxid;Nitrogén;Hidrogén;2
-Hány lába van egy póknak?;6;8;10;12;3
-Mi a leggyorsabb szárazföldi állat?;Gepárd;Oroszlán;Zebra;Antilop;2
-Mennyi 7 × 8?;48;56;64;72;3
-Hány szögletű egy hatszög?;5;6;7;8;3
-Mennyi 12 ÷ 3?;3;4;5;6;3
-Hány perc van egy órában?;30;60;90;120;3
-Mennyi a 15 + 25?;30;40;50;60;4
-Mikor volt az első világháború kezdete?;1912;1914;1916;1918;3
-Melyik híres történelmi személy mondta: "Veni, vidi, vici"?;Napóleon;Julius Caesar;Alexandrosz;Hannibál;3
-Ki fedezte fel Amerikát?;Vasco da Gama;Marco Polo;Kolumbusz Kristóf;James Cook;5
-Mi volt az ókori Egyiptom írásrendszere?;Latin;Hieroglifák;Görög;Arameus;4
-Melyik forradalom történt 1789-ben?;Amerikai forradalom;Francia forradalom;Ipari forradalom;Bolsevik forradalom;4
-Ki volt a görög mitológia főistene?;Poszeidón;Hádész;Zeusz;Apolló;5
-Mi volt Thor fegyvere a skandináv mitológiában?;Kard;Kalapács;Lándzsa;Íj;4
-Melyik állat kapcsolódik az egyiptomi isten, Anubiszhoz?;Oroszlán;Szent macska;Sakál;Kígyó;5
-Hány feje volt a görög mitológiában szereplő Hüdra nevű szörnyetegnek?;3;5;7;Több;6
-Melyik isten volt a háború istene a római mitológiában?;Mars;Jupiter;Neptunusz;Vulcanus;3
-Melyik kontinensen található az Amazonas esőerdő?;Afrika;Dél-Amerika;Ázsia;Észak-Amerika;3
-Melyik városban található az Eiffel-torony?;London;Berlin;Párizs;Róma;4
-Hány óra van egy napban?;12;24;48;60;3
-Mi a kémiai jele a víznek?;CO2;H2O;NaCl;O2;3
-Mi a legnagyobb kontinens?;Afrika;Európa;Ázsia;Dél-Amerika;4
-Melyik állat alszik fejjel lefelé?;Bagoly;Denevér;Majom;Kígyó;3
-Mi a világ leghosszabb folyója?;Nílus;Amazonas;Mississippi;Jangce;3
-Hány szárnya van egy méhnek?;2;4;6;8;3
-Melyik madár nem tud repülni?;Sas;Pingvin;Veréb;Hattyú;3
-Miért kék az ég?;A nap sugarai miatt;A föld légkörének molekulái szórják a kék fényt;A tenger tükröződése miatt;A szennyezés miatt;3
-Mennyi 9 × 6?;54;56;58;60;2
-Mennyi a 100 − 35?;55;65;75;85;3
-Hány fokos szög van egy egyenlő szárú háromszögben?;90°;120°;180°;360°;4
-Mi a négyzetgyöke a 49-nek?;5;6;7;8;4
-Mennyi 15 ÷ 5?;2;3;4;5;3
-Mikor ért véget a második világháború?;1940;1942;1945;1948;4
-Ki volt az első amerikai elnök?;Abraham Lincoln;Thomas Jefferson;George Washington;John Adams;4
-Hol épült a Colosseum?;Görögország;Olaszország;Egyiptom;Franciaország;3
-Mi volt a neve a hidegháború két fő ellenfelének?;Kína és India;USA és Szovjetunió;Franciaország és Németország;Japán és Korea;3
-Hány évig tartott a százéves háború?;100;116;98;120;3
-Melyik görög isten volt a tenger istene?;Zeusz;Hádész;Poszeidón;Dionüszosz;4
-Ki volt Odüsszeusz felesége?;Pénelopé;Heléna;Kalliopé;Kassandra;2
-Melyik isten volt a tolvajok patrónusa?;Apolló;Hermész;Árész;Hádész;3
-Melyik mitológiai lény őrzött aranyalmákat?;Minotaurusz;Hüdra;Heszperiszek kertjének kígyója;Szirének;4
-Ki volt a nap istene az egyiptomi mitológiában?;Anubisz;Ízisz;Rá;Hórusz;4
-Mi az atomok központi része?;Elektron;Proton;Neutron;Atommag;4
-Hány kontinens van a Földön?;5;6;7;8;4
-Mi a Nap legfontosabb energiaforrása?;Szélenergia;Nukleáris fúzió;Gravitáció;Kémiai reakció;3
-Melyik állam található az USA nyugati partján?;New York;Kalifornia;Texas;Florida;3
-Milyen halmazállapotú a víz 0°C alatt?;Folyékony;Szilárd;Gáz;Plazma;3
-Mi az emberi test legnagyobb szerve?;Máj;Szív;Tüdő;Bőr;4
-Melyik állat nem él vízben?;Cápa;Bálna;Teknős;Sas;4
-Mi okozza az évszakokat?;A Nap forgása;A Hold gravitációja;A Föld tengelyferdesége;A Nap távolsága;4
-Melyik növény termése a banán?;Cserje;Fa;Gyógynövény;Fűféle;4
-Melyik állatnak van a legnagyobb agya testméretéhez képest?;Delfin;Elefánt;Polip;Ember;4
-Mennyi 25 × 4?;50;75;100;125;4
-Mennyi a 64 négyzetgyöke?;6;7;8;9;4
-Mennyi 3²?;3;6;9;12;4
-Hány liter van 3 deciliterben?;0,3 liter;0,5 liter;1 liter;3 liter;2
-Hány nap van egy szökőévben?;364;365;366;367;4
-Ki volt Magyarország első királya?;IV. Béla;I. László;Szent István;II. András;4
-Melyik város volt a Római Birodalom fővárosa?;Athén;Róma;Alexandria;Bizánc;4
-Mi volt az Amerikai Egyesült Államok függetlenségi nyilatkozatának éve?;1776;1789;1800;1812;2
-Hol volt a híres 1517-es reformáció kezdete?;Franciaország;Németország;Svájc;Anglia;3
-Melyik ország építette a Titanicot?;Anglia;Írország;Skócia;Franciaország;2
-Ki volt az alvilág istene a görög mitológiában?;Zeusz;Poszeidón;Hádész;Hermész;4
-Melyik görög hős ölt meg egy Minotauruszt?;Odüsszeusz;Thészeusz;Herkules;Akhilleusz;4
-Ki volt a bölcsesség istennője a görög mitológiában?;Aphrodité;Ártemisz;Pallasz Athéné;Héra;4
-Melyik isten volt a rómaiak Jupiter megfelelője?;Zeusz;Mars;Apolló;Saturnus;3
-Mi volt a neve a görög mitológiában az első emberpár teremtőjének?;Gaia;Prométheusz;Kronosz;Atlasz;3
-Mi a világ legmélyebb óceánárka?;Mariana-árok;Tongai-árok;Aleut-árok;Kermadec-árok;2
-Melyik bolygón található az Olympus Mons nevű hegy?;Föld;Mars;Vénusz;Jupiter;3
-Mi az internet rövidítése?;International Net;Interconnected Network;Integrated Network;Interactive Network;3
-Melyik országból származik a sushi?;Kína;Thaiföld;Japán;Dél-Korea;3
-Mi volt Albert Einstein híres egyenlete?;E = mc²;F = ma;P = IV;V = IR;2
-Melyik a legnagyobb ismert emlős?;Elefánt;Kék bálna;Fehér cápa;Jegesmedve;4
-Mi a neve a vulkánkitörésből származó megolvadt kőzetnek?;Láva;Kőzet;Hamuréteg;Bazalt;2
-Melyik gáz a Föld légkörének legnagyobb része?;Oxigén;Szén-dioxid;Nitrogén;Hidrogén;3
-Melyik állat hibernál a téli hónapokban?;Medve;Zsiráf;Gepárd;Delfin;3
-Melyik országban található az Amazonas őserdő nagy része?;Argentína;Brazília;Kolumbia;Peru;3
-Mennyi 50 ÷ 2?;20;25;30;35;2
-Mennyi 6 + 7 × 2?;20;16;26;14;2
-Mennyi a 15 négyzete?;225;150;250;275;2
-Mi az 5! értéke? (5 faktoriális);20;60;120;240;2
-Mennyi az 1/2 + 1/3 összege?;2/5;5/6;1/5;7/6;2
-Mikor érkezett Kolumbusz Kristóf Amerikába?;1492;1498;1500;1512;3
-Ki volt a Római Birodalom első császára?;Julius Caesar;Augustus;Nero;Traianus;3
-Mi volt a magyar honfoglalás éve?;876;895;900;1001;3
-Ki írta az „Iliász” és az „Odüsszeia” című eposzokat?;Szophoklész;Homérosz;Arisztotelész;Hérodotosz;3
-Ki volt az amerikai polgárháború alatt az Egyesült Államok elnöke?;George Washington;Abraham Lincoln;Andrew Jackson;Ulysses S. Grant;3
-Melyik mitológiai lény félig ember, félig ló?;Kentaur;Minotaurusz;Szfinx;Szirén;2
-Ki volt a görög mitológiában a kovácsok és tűz istene?;Hermész;Héphaisztosz;Árész;Apolló;2
-Melyik lény őrzi az Alvilág kapuját?;Minotaurusz;Kerberosz;Hüdra;Kentaur;3
-Ki volt az északi mitológiában Odin fia?;Loki;Thor;Balder;Fenrir;3
-Melyik istennő volt a görög mitológiában a szerelem és szépség istennője?;Héra;Aphrodité;Pallasz Athéné;Ártemisz;2
+Melyik bolygó a Naprendszer legnagyobb bolygója?;Föld;Mars;Jupiter;Szaturnusz;Jupiter
+Hány szín van a szivárványban?;5;6;7;8;7  
+Melyik a világ legmagasabb hegye?;Kilimandzsáró;Mont Blanc;Mount Everest;K2;Mount Everest  
+Mi a fővárosa Kanadának?;Toronto;Ottawa;Vancouver;Montreal;Ottawa  
+Ki írta a "Harry Potter" könyveket?;J.R.R. Tolkien;J.K. Rowling;Suzanne Collins;George R.R. Martin;J.K. Rowling  
+Mi a világ legnagyobb óceánja?;Atlanti-óceán;Indiai-óceán;Csendes-óceán;Jeges-tenger;Csendes-óceán  
+Melyik állat nem emlős?;Delfin;Cápa;Bálna;Denevér;Cápa  
+Mi a fotoszintézis fő terméke?;Oxigén;Szén-dioxid;Nitrogén;Hidrogén;Oxigén  
+Hány lába van egy póknak?;6;8;10;12;8  
+Mi a leggyorsabb szárazföldi állat?;Gepárd;Oroszlán;Zebra;Antilop;Gepárd  
+Mennyi 7 × 8?;48;56;64;72;56  
+Hány szögletű egy hatszög?;5;6;7;8;6  
+Mennyi 12 ÷ 3?;3;4;5;6;4  
+Hány perc van egy órában?;30;60;90;120;60  
+Mennyi a 15 + 25?;30;40;50;60;40  
+Mikor volt az első világháború kezdete?;1912;1914;1916;1918;1914  
+Melyik híres történelmi személy mondta: "Veni, vidi, vici"?;Napóleon;Julius Caesar;Alexandrosz;Hannibál;Julius Caesar  
+Ki fedezte fel Amerikát?;Vasco da Gama;Marco Polo;Kolumbusz Kristóf;James Cook;Kolumbusz Kristóf  
+Mi volt az ókori Egyiptom írásrendszere?;Latin;Hieroglifák;Görög;Arameus;Hieroglifák  
+Melyik forradalom történt 1789-ben?;Amerikai forradalom;Francia forradalom;Ipari forradalom;Bolsevik forradalom;Francia forradalom  
+Ki volt a görög mitológia főistene?;Poszeidón;Hádész;Zeusz;Apolló;Zeusz  
+Mi volt Thor fegyvere a skandináv mitológiában?;Kard;Kalapács;Lándzsa;Íj;Kalapács  
+Melyik állat kapcsolódik az egyiptomi isten, Anubiszhoz?;Oroszlán;Szent macska;Sakál;Kígyó;Sakál  
+Hány feje volt a görög mitológiában szereplő Hüdra nevű szörnyetegnek?;3;5;7;Több;Több  
+Melyik isten volt a háború istene a római mitológiában?;Mars;Jupiter;Neptunusz;Vulcanus;Mars  
+Melyik kontinensen található az Amazonas esőerdő?;Afrika;Dél-Amerika;Ázsia;Észak-Amerika;Dél-Amerika  
+Melyik városban található az Eiffel-torony?;London;Berlin;Párizs;Róma;Párizs  
+Hány óra van egy napban?;12;24;48;60;24  
+Mi a kémiai jele a víznek?;CO2;H2O;NaCl;O2;H2O  
+Mi a legnagyobb kontinens?;Afrika;Európa;Ázsia;Dél-Amerika;Ázsia  
+Melyik állat alszik fejjel lefelé?;Bagoly;Denevér;Majom;Kígyó;Denevér  
+Mi a világ leghosszabb folyója?;Nílus;Amazonas;Mississippi;Jangce;Amazonas  
+Hány szárnya van egy méhnek?;2;4;6;8;4  
+Melyik madár nem tud repülni?;Sas;Pingvin;Veréb;Hattyú;Pingvin  
+Miért kék az ég?;A nap sugarai miatt;A föld légkörének molekulái szórják a kék fényt;A tenger tükröződése miatt;A szennyezés miatt;A föld légkörének molekulái szórják a kék fényt  
+Mennyi 9 × 6?;54;56;58;60;54  
+Mennyi a 100 − 35?;55;65;75;85;65  
+Hány fokos szög van egy egyenlő szárú háromszögben?;90°;120°;180°;360°;180°  
+Mi a négyzetgyöke a 49-nek?;5;6;7;8;7  
+Mennyi 15 ÷ 5?;2;3;4;5;3  
+Mikor ért véget a második világháború?;1940;1942;1945;1948;1945  
+Ki volt az első amerikai elnök?;Abraham Lincoln;Thomas Jefferson;George Washington;John Adams;George Washington  
+Hol épült a Colosseum?;Görögország;Olaszország;Egyiptom;Franciaország;Olaszország  
+Mi volt a neve a hidegháború két fő ellenfelének?;Kína és India;USA és Szovjetunió;Franciaország és Németország;Japán és Korea;USA és Szovjetunió  
+Hány évig tartott a százéves háború?;100;116;98;120;116  
+Melyik görög isten volt a tenger istene?;Zeusz;Hádész;Poszeidón;Dionüszosz;Poszeidón  
+Ki volt Odüsszeusz felesége?;Pénelopé;Heléna;Kalliopé;Kassandra;Pénelopé  
+Melyik isten volt a tolvajok patrónusa?;Apolló;Hermész;Árész;Hádész;Hermész  
+Melyik mitológiai lény őrzött aranyalmákat?;Minotaurusz;Hüdra;Heszperiszek kertjének kígyója;Szirének;Heszperiszek kertjének kígyója  
+Ki volt a nap istene az egyiptomi mitológiában?;Anubisz;Ízisz;Rá;Hórusz;Rá  
+Mi az atomok központi része?;Elektron;Proton;Neutron;Atommag;Atommag  
+Hány kontinens van a Földön?;5;6;7;8;7  
+Mi a Nap legfontosabb energiaforrása?;Szélenergia;Nukleáris fúzió;Gravitáció;Kémiai reakció;Nukleáris fúzió  
+Melyik állam található az USA nyugati partján?;New York;Kalifornia;Texas;Florida;Kalifornia  
+Milyen halmazállapotú a víz 0°C alatt?;Folyékony;Szilárd;Gáz;Plazma;Szilárd  
+Mi az emberi test legnagyobb szerve?;Máj;Szív;Tüdő;Bőr;Bőr  
+Melyik állat nem él vízben?;Cápa;Bálna;Teknős;Sas;Sas  
+Mi okozza az évszakokat?;A Nap forgása;A Hold gravitációja;A Föld tengelyferdesége;A Nap távolsága;A Föld tengelyferdesége  
+Melyik növény termése a banán?;Cserje;Fa;Gyógynövény;Fűféle;Fűféle  
+Melyik állatnak van a legnagyobb agya testméretéhez képest?;Delfin;Elefánt;Polip;Ember;Ember  
+Mennyi 25 × 4?;50;75;100;125;100  
+Mennyi a 64 négyzetgyöke?;6;7;8;9;8  
+Mennyi 3²?;3;6;9;12;9  
+Hány liter van 3 deciliterben?;0,3 liter;0,5 liter;1 liter;3 liter;0,3 liter  
+Hány nap van egy szökőévben?;364;365;366;367;366  
+Ki volt Magyarország első királya?;IV. Béla;I. László;Szent István;II. András;Szent István  
+Melyik város volt a Római Birodalom fővárosa?;Athén;Róma;Alexandria;Bizánc;Róma  
+Mi volt az Amerikai Egyesült Államok függetlenségi nyilatkozatának éve?;1776;1789;1800;1812;1776  
+Hol volt a híres 1517-es reformáció kezdete?;Franciaország;Németország;Svájc;Anglia;Németország  
+Melyik ország építette a Titanicot?;Anglia;Írország;Skócia;Franciaország;Írország  
+Ki volt az alvilág istene a görög mitológiában?;Zeusz;Poszeidón;Hádész;Hermész;Hádész  
+Melyik görög hős ölt meg egy Minotauruszt?;Odüsszeusz;Thészeusz;Herkules;Akhilleusz;Thészeusz  
+Ki volt a bölcsesség istennője a görög mitológiában?;Aphrodité;Ártemisz;Pallasz Athéné;Héra;Pallasz Athéné  
+Melyik isten volt a rómaiak Jupiter megfelelője?;Zeusz;Mars;Apolló;Saturnus;Zeusz  
+Mi volt a neve a görög mitológiában az első emberpár teremtőjének?;Gaia;Prométheusz;Kronosz;Atlasz;Prométheusz  
+Mi a világ legmélyebb óceánárka?;Mariana-árok;Tongai-árok;Aleut-árok;Kermadec-árok;Mariana-árok  
+Melyik bolygón található az Olympus Mons nevű hegy?;Föld;Mars;Vénusz;Jupiter;Mars  
+Mi az internet rövidítése?;International Net;Interconnected Network;Integrated Network;Interactive Network;Interconnected Network  
+Melyik országból származik a sushi?;Kína;Thaiföld;Japán;Dél-Korea;Japán  
+Mi volt Albert Einstein híres egyenlete?;E = mc²;F = ma;P = IV;V = IR;E = mc²  
+Melyik a legnagyobb ismert emlős?;Elefánt;Kék bálna;Fehér cápa;Jegesmedve;Kék bálna  
+Mi a neve a vulkánkitörésből származó megolvadt kőzetnek?;Láva;Kőzet;Hamuréteg;Bazalt;Láva  
+Melyik gáz a Föld légkörének legnagyobb része?;Oxigén;Szén-dioxid;Nitrogén;Hidrogén;Nitrogén  
+Melyik állat hibernál a téli hónapokban?;Medve;Zsiráf;Gepárd;Delfin;Medve  
+Melyik országban található az Amazonas őserdő nagy része?;Argentína;Brazília;Kolumbia;Peru;Brazília  
+Mennyi 50 ÷ 2?;20;25;30;35;25  
+Mennyi 6 + 7 × 2?;20;16;26;14;20  
+Mennyi a 15 négyzete?;225;150;250;275;225  
+Mi az 5! értéke? (5 faktoriális);20;60;120;240;120  
+Mennyi az 1/2 + 1/3 összege?;2/5;5/6;1/5;7/6;5/6  
+Mikor érkezett Kolumbusz Kristóf Amerikába?;1492;1498;1500;1512;1492  
+Ki volt a Római Birodalom első császára?;Julius Caesar;Augustus;Nero;Traianus;Augustus  
+Mi volt a magyar honfoglalás éve?;876;895;900;1001;895  
+Ki írta az „Iliász” és az „Odüsszeia” című eposzokat?;Szophoklész;Homérosz;Arisztotelész;Hérodotosz;Homérosz  
+Ki volt az amerikai polgárháború alatt az Egyesült Államok elnöke?;George Washington;Abraham Lincoln;Andrew Jackson;Ulysses S. Grant;Abraham Lincoln  
+Melyik mitológiai lény félig ember, félig ló?;Kentaur;Minotaurusz;Szfinx;Szirén;Kentaur  
+Ki volt a görög mitológiában a kovácsok és tűz istene?;Hermész;Héphaisztosz;Árész;Apolló;Héphaisztosz  
+Melyik lény őrzi az Alvilág kapuját?;Minotaurusz;Kerberosz;Hüdra;Kentaur;Kerberosz  
+Ki volt az északi mitológiában Odin fia?;Loki;Thor;Balder;Fenrir;Thor  
+Melyik istennő volt a görög mitológiában a szerelem és szépség istennője?;Héra;Aphrodité;Pallasz Athéné;Ártemisz;Aphrodité  

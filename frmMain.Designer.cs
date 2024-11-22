@@ -47,7 +47,6 @@
             // 
             // charPbx
             // 
-            charPbx.Image = (Image)resources.GetObject("charPbx.Image");
             charPbx.ImageLocation = "H:\\repos\\Tudás Harca\\Resources\\pixel jo.png";
             charPbx.Location = new Point(41, 12);
             charPbx.Name = "charPbx";
@@ -57,7 +56,6 @@
             // 
             // monsterPbx
             // 
-            monsterPbx.Image = (Image)resources.GetObject("monsterPbx.Image");
             monsterPbx.ImageLocation = "H:\\repos\\Tudás Harca\\Resources\\enemy1.png";
             monsterPbx.Location = new Point(359, 11);
             monsterPbx.Name = "monsterPbx";
