@@ -26,6 +26,7 @@ namespace Tudás_Harca
             this.answer4 = _answer4;
             this.correct = _correct;
         }
+
         
     }
 }

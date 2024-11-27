@@ -40,7 +40,7 @@
             answ3Btn = new Button();
             answ4Btn = new Button();
             plrHpLbl = new Label();
-            enemyHpBtn = new Label();
+            enemyHpLbl = new Label();
             ((System.ComponentModel.ISupportInitialize)charPbx).BeginInit();
             ((System.ComponentModel.ISupportInitialize)monsterPbx).BeginInit();
             SuspendLayout();
@@ -56,7 +56,8 @@
             // 
             // monsterPbx
             // 
-            monsterPbx.ImageLocation = "H:\\repos\\Tudás Harca\\Resources\\enemy1.png";
+            monsterPbx.BackColor = Color.White;
+            monsterPbx.ImageLocation = "";
             monsterPbx.Location = new Point(359, 11);
             monsterPbx.Name = "monsterPbx";
             monsterPbx.Size = new Size(200, 200);
@@ -147,15 +148,15 @@
             plrHpLbl.TabIndex = 4;
             plrHpLbl.Text = "Az életed: 10";
             // 
-            // enemyHpBtn
+            // enemyHpLbl
             // 
-            enemyHpBtn.AutoSize = true;
-            enemyHpBtn.BackColor = SystemColors.ButtonFace;
-            enemyHpBtn.Location = new Point(411, 214);
-            enemyHpBtn.Name = "enemyHpBtn";
-            enemyHpBtn.Size = new Size(98, 15);
-            enemyHpBtn.TabIndex = 4;
-            enemyHpBtn.Text = "A szörny élete: 10";
+            enemyHpLbl.AutoSize = true;
+            enemyHpLbl.BackColor = SystemColors.ButtonFace;
+            enemyHpLbl.Location = new Point(411, 214);
+            enemyHpLbl.Name = "enemyHpLbl";
+            enemyHpLbl.Size = new Size(98, 15);
+            enemyHpLbl.TabIndex = 4;
+            enemyHpLbl.Text = "A szörny élete: 10";
             // 
             // frmMain
             // 
@@ -164,7 +165,7 @@
             BackColor = SystemColors.ControlDarkDark;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(604, 611);
-            Controls.Add(enemyHpBtn);
+            Controls.Add(enemyHpLbl);
             Controls.Add(plrHpLbl);
             Controls.Add(answ4Btn);
             Controls.Add(answ3Btn);
@@ -198,6 +199,6 @@
         private Button answ3Btn;
         private Button answ4Btn;
         private Label plrHpLbl;
-        private Label enemyHpBtn;
+        private Label enemyHpLbl;
     }
 }

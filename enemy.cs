@@ -20,5 +20,10 @@ namespace Tudás_Harca
             this.dmg = _dmg;
             this.img = _img;
         }
+
+        public void takeDamage(int dmgTaken)
+        {
+            this.hp -= dmg;
+        }
     }
 }
