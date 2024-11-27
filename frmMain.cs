@@ -1,10 +1,13 @@
 using System.Drawing.Text;
+using System.Security.Cryptography;
 using Tudás_Harca.Properties;
 
 namespace Tudás_Harca
 {
     public partial class frmMain : Form
     {
+        Color btnColor = Color.FromArgb(200, 60, 60, 60);
+
         List<Question> questionList = [];
         List<Enemy> enemyList = [];
         Random rnd = new Random();
@@ -44,31 +47,45 @@ namespace Tudás_Harca
                     MessageBox.Show("GATYAXDDD");
                 }
             }
-            setupScreen();
+            updateScreen();
             waitQuestion(2000);
         }
 
         private void FrmMainLoad(object? sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader(@"H:\\repos\\Tudás Harca\\Resources\\questions.txt");
+            StreamReader sr = new StreamReader(@"Properties\\Resources\\questions.txt");
             while (!sr.EndOfStream) 
             {
                 String[] data = sr.ReadLine().Split(";");
                 Question q = new Question(data[0], data[1], data[2], data[3], data[4], data[5]);
                 questionList.Add(q);
             }
-            enemyList.Add(new Enemy("kis haver1", 1, 1, @"H:\\repos\\Tudás Harca\\Resources\\enemy1.png"));
-            enemyList.Add(new Enemy("kis haver2", 3, 2, @"H:\\repos\\Tudás Harca\\Resources\\enemy2.png"));
-            enemyList.Add(new Enemy("nagy haver", 10, 3, @"H:\\repos\\Tudás Harca\\Resources\\pixel boss.png"));
+            enemyList.Add(new Enemy("kis haver1", 1, 1, @"Properties\\Resources\\enemy1.png"));
+            enemyList.Add(new Enemy("kis haver2", 3, 2, @"Properties\\Resources\\enemy2.png"));
+            enemyList.Add(new Enemy("nagy haver", 10, 3, @"Properties\\Resources\\pixel boss.png"));
             setupScreen();
             initQuestion();
         }
 
         private void setupScreen()
         {
+            charPbx.ImageLocation = @"Properties\\Resources\\pixel jo.png";
+            questionLbl.BackColor = Color.FromArgb(168, 60, 60, 60);
+            enemyHpLbl.BackColor = Color.FromArgb(168, 60, 60, 60);
+            plrHpLbl.BackColor = Color.FromArgb(168,60,60,60);
+            perk1Btn.BackColor = btnColor;
+            perk2Btn.BackColor = btnColor;
+            perk3Btn.BackColor = btnColor;
+            updateScreen();
+        }
+
+
+        private void updateScreen()
+        {
             plrHpLbl.Text = $"Az életed: {plr.hp}";
             monsterPbx.ImageLocation = enemyList[0].img;
             enemyHpLbl.Text = $"A szörny élete: {enemyList[0].hp}";
+ 
         }
 
         private void initQuestion()
@@ -76,13 +93,13 @@ namespace Tudás_Harca
             q = questionList[rnd.Next(questionList.Count)];
             questionLbl.Text = q.prompt;
             answ1Btn.Text = q.answer1;
-            answ1Btn.BackColor = Control.DefaultBackColor;
+            answ1Btn.BackColor = btnColor;
             answ2Btn.Text = q.answer2;
-            answ2Btn.BackColor = Control.DefaultBackColor;
+            answ2Btn.BackColor = btnColor;
             answ3Btn.Text = q.answer3;
-            answ3Btn.BackColor = Control.DefaultBackColor;
+            answ3Btn.BackColor = btnColor;
             answ4Btn.Text = q.answer4;
-            answ4Btn.BackColor = Control.DefaultBackColor;
+            answ4Btn.BackColor = btnColor;
         }
         async private void waitQuestion(int time)
         {

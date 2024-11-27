@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             charPbx = new PictureBox();
             monsterPbx = new PictureBox();
             perk1Btn = new Button();
@@ -47,7 +46,7 @@
             // 
             // charPbx
             // 
-            charPbx.ImageLocation = "H:\\repos\\Tudás Harca\\Resources\\pixel jo.png";
+            charPbx.ImageLocation = "Properties\\\\Resources\\\\pixel jo.png\"";
             charPbx.Location = new Point(41, 12);
             charPbx.Name = "charPbx";
             charPbx.Size = new Size(200, 200);
@@ -66,35 +65,51 @@
             // 
             // perk1Btn
             // 
+            perk1Btn.BackColor = Color.Transparent;
+            perk1Btn.FlatAppearance.BorderSize = 0;
+            perk1Btn.FlatStyle = FlatStyle.Flat;
+            perk1Btn.Font = new Font("Segoe UI", 12F);
+            perk1Btn.ForeColor = Color.Azure;
             perk1Btn.Location = new Point(41, 234);
             perk1Btn.Name = "perk1Btn";
             perk1Btn.Size = new Size(120, 75);
             perk1Btn.TabIndex = 1;
             perk1Btn.Text = "Felezés";
-            perk1Btn.UseVisualStyleBackColor = true;
+            perk1Btn.UseVisualStyleBackColor = false;
             // 
             // perk2Btn
             // 
+            perk2Btn.BackColor = Color.Transparent;
+            perk2Btn.FlatAppearance.BorderSize = 0;
+            perk2Btn.FlatStyle = FlatStyle.Flat;
+            perk2Btn.Font = new Font("Segoe UI", 12F);
+            perk2Btn.ForeColor = Color.Azure;
             perk2Btn.Location = new Point(241, 234);
             perk2Btn.Name = "perk2Btn";
             perk2Btn.Size = new Size(120, 75);
             perk2Btn.TabIndex = 1;
             perk2Btn.Text = "Dupla sebzés";
-            perk2Btn.UseVisualStyleBackColor = true;
+            perk2Btn.UseVisualStyleBackColor = false;
             // 
             // perk3Btn
             // 
+            perk3Btn.BackColor = Color.Transparent;
+            perk3Btn.FlatAppearance.BorderSize = 0;
+            perk3Btn.FlatStyle = FlatStyle.Flat;
+            perk3Btn.Font = new Font("Segoe UI", 12F);
+            perk3Btn.ForeColor = Color.Azure;
             perk3Btn.Location = new Point(439, 234);
             perk3Btn.Name = "perk3Btn";
             perk3Btn.Size = new Size(120, 75);
             perk3Btn.TabIndex = 1;
             perk3Btn.Text = "Pajzs";
-            perk3Btn.UseVisualStyleBackColor = true;
+            perk3Btn.UseVisualStyleBackColor = false;
             // 
             // questionLbl
             // 
-            questionLbl.BackColor = SystemColors.ButtonFace;
+            questionLbl.BackColor = Color.FromArgb(134, 134, 134);
             questionLbl.Font = new Font("Segoe UI", 12F);
+            questionLbl.ForeColor = Color.Azure;
             questionLbl.Location = new Point(31, 312);
             questionLbl.Name = "questionLbl";
             questionLbl.Size = new Size(547, 62);
@@ -104,44 +119,65 @@
             // 
             // answ1Btn
             // 
+            answ1Btn.BackColor = Color.Transparent;
+            answ1Btn.FlatAppearance.BorderSize = 0;
+            answ1Btn.FlatStyle = FlatStyle.Flat;
+            answ1Btn.Font = new Font("Segoe UI", 12F);
+            answ1Btn.ForeColor = Color.Azure;
             answ1Btn.Location = new Point(41, 387);
             answ1Btn.Name = "answ1Btn";
             answ1Btn.Size = new Size(256, 85);
             answ1Btn.TabIndex = 3;
             answ1Btn.Text = "button1";
-            answ1Btn.UseVisualStyleBackColor = true;
+            answ1Btn.UseVisualStyleBackColor = false;
             // 
             // answ2Btn
             // 
+            answ2Btn.BackColor = Color.Transparent;
+            answ2Btn.FlatAppearance.BorderSize = 0;
+            answ2Btn.FlatStyle = FlatStyle.Flat;
+            answ2Btn.Font = new Font("Segoe UI", 12F);
+            answ2Btn.ForeColor = Color.Azure;
             answ2Btn.Location = new Point(303, 387);
             answ2Btn.Name = "answ2Btn";
             answ2Btn.Size = new Size(256, 85);
             answ2Btn.TabIndex = 3;
             answ2Btn.Text = "button1";
-            answ2Btn.UseVisualStyleBackColor = true;
+            answ2Btn.UseVisualStyleBackColor = false;
             // 
             // answ3Btn
             // 
+            answ3Btn.BackColor = Color.Transparent;
+            answ3Btn.FlatAppearance.BorderSize = 0;
+            answ3Btn.FlatStyle = FlatStyle.Flat;
+            answ3Btn.Font = new Font("Segoe UI", 12F);
+            answ3Btn.ForeColor = Color.Azure;
             answ3Btn.Location = new Point(41, 478);
             answ3Btn.Name = "answ3Btn";
             answ3Btn.Size = new Size(256, 85);
             answ3Btn.TabIndex = 3;
             answ3Btn.Text = "button1";
-            answ3Btn.UseVisualStyleBackColor = true;
+            answ3Btn.UseVisualStyleBackColor = false;
             // 
             // answ4Btn
             // 
+            answ4Btn.BackColor = Color.Transparent;
+            answ4Btn.FlatAppearance.BorderSize = 0;
+            answ4Btn.FlatStyle = FlatStyle.Flat;
+            answ4Btn.Font = new Font("Segoe UI", 12F);
+            answ4Btn.ForeColor = Color.Azure;
             answ4Btn.Location = new Point(303, 478);
             answ4Btn.Name = "answ4Btn";
             answ4Btn.Size = new Size(256, 85);
             answ4Btn.TabIndex = 3;
             answ4Btn.Text = "button1";
-            answ4Btn.UseVisualStyleBackColor = true;
+            answ4Btn.UseVisualStyleBackColor = false;
             // 
             // plrHpLbl
             // 
             plrHpLbl.AutoSize = true;
             plrHpLbl.BackColor = SystemColors.ButtonFace;
+            plrHpLbl.ForeColor = Color.Azure;
             plrHpLbl.Location = new Point(88, 216);
             plrHpLbl.Name = "plrHpLbl";
             plrHpLbl.Size = new Size(73, 15);
@@ -152,6 +188,7 @@
             // 
             enemyHpLbl.AutoSize = true;
             enemyHpLbl.BackColor = SystemColors.ButtonFace;
+            enemyHpLbl.ForeColor = Color.Azure;
             enemyHpLbl.Location = new Point(411, 214);
             enemyHpLbl.Name = "enemyHpLbl";
             enemyHpLbl.Size = new Size(98, 15);
@@ -162,8 +199,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDarkDark;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(604, 611);
             Controls.Add(enemyHpLbl);
             Controls.Add(plrHpLbl);
