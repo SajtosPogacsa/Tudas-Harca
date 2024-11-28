@@ -1,32 +1,70 @@
-using System.Drawing.Text;
-using System.Security.Cryptography;
-using Tudás_Harca.Properties;
+
 
 namespace Tudás_Harca
 {
     public partial class frmMain : Form
     {
         Color btnColor = Color.FromArgb(200, 60, 60, 60);
-
+        frmMenu menu = new();
         List<Question> questionList = [];
         List<Enemy> enemyList = [];
         Random rnd = new Random();
         Player plr = new(10, 1, "Játékos");
         Question q;
+        System.Windows.Forms.Timer timer = new();
+        System.Windows.Forms.Timer timerHud = new();
+
         public frmMain()
         {
+            timer.Interval = 15000;
+            timerHud.Interval = 1000;
             InitializeComponent();
             this.Load += FrmMainLoad;
+            this.FormClosing += FrmMainFormClosing;
             monsterPbx.BackColor = Color.Transparent;
             answ1Btn.Click += AnswBtnClick;
             answ2Btn.Click += AnswBtnClick;
             answ3Btn.Click += AnswBtnClick;
             answ4Btn.Click += AnswBtnClick;
+            timer.Tick += TimerTick;
+            timerHud.Tick += TimerHudTick;
+        }
+
+        private void FrmMainFormClosing(object? sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FrmMainFormClosed(object? sender, FormClosedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void TimerTick(object? sender, EventArgs e)
+        {
+            MessageBox.Show("Kifutottál az időből, a szörny megtámadott");
+            plr.takeDamage(enemyList[0].dmg);
+            updateScreen();
+            waitQuestion(2000);
+        }
+
+        private void TimerHudTick(object? sender, EventArgs e)
+        {
+            timerPnl.Width -= 35;
+        }
+
+        private void TimerUpdate()
+        {
+            timer.Start();
+            timerHud.Start();
+            timerPnl.Width = 520;
         }
 
         private void AnswBtnClick(object? sender, EventArgs e)
         {
             buttonEnabler();
+            timer.Stop();
+            timerHud.Stop();
             Button btn = (Button)sender;
             if (btn.Text == q.correct.Trim())
             {
@@ -35,7 +73,7 @@ namespace Tudás_Harca
                 if (enemyList[0].hp <= 0)
                 {
                     enemyList.RemoveAt(0);
-                    MessageBox.Show("Sikeresen legyőzted a szörnyet, de még közel sincs vége!");
+                    MessageBox.Show($"Sikeresen legyőzted a szörnyet, de még közel sincs vége!");
                 }
             }
             else
@@ -49,6 +87,7 @@ namespace Tudás_Harca
             }
             updateScreen();
             waitQuestion(2000);
+            buttonEnabler();
         }
 
         private void FrmMainLoad(object? sender, EventArgs e)
@@ -83,9 +122,25 @@ namespace Tudás_Harca
         private void updateScreen()
         {
             plrHpLbl.Text = $"Az életed: {plr.hp}";
-            monsterPbx.ImageLocation = enemyList[0].img;
-            enemyHpLbl.Text = $"A szörny élete: {enemyList[0].hp}";
+            if (enemyList.Count > 0)
+            {
+                monsterPbx.ImageLocation = enemyList[0].img;
+                enemyHpLbl.Text = $"A szörny élete: {enemyList[0].hp}";
+            }
+            else
+            {
+                win();
+            }
  
+        }
+
+        private void win()
+        {
+            MessageBox.Show(
+                text: "Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot!", 
+                caption: "Nyertél!",
+                icon: MessageBoxIcon.Asterisk,
+                buttons:MessageBoxButtons.OK);
         }
 
         private void initQuestion()
@@ -100,13 +155,13 @@ namespace Tudás_Harca
             answ3Btn.BackColor = btnColor;
             answ4Btn.Text = q.answer4;
             answ4Btn.BackColor = btnColor;
+            TimerUpdate();
         }
         async private void waitQuestion(int time)
         {
             await Task.Delay(time);
 
             initQuestion();
-            buttonEnabler();
         }
 
         private void buttonEnabler()

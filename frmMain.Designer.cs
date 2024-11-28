@@ -40,6 +40,7 @@
             answ4Btn = new Button();
             plrHpLbl = new Label();
             enemyHpLbl = new Label();
+            timerPnl = new Panel();
             ((System.ComponentModel.ISupportInitialize)charPbx).BeginInit();
             ((System.ComponentModel.ISupportInitialize)monsterPbx).BeginInit();
             SuspendLayout();
@@ -110,9 +111,9 @@
             questionLbl.BackColor = Color.FromArgb(134, 134, 134);
             questionLbl.Font = new Font("Segoe UI", 12F);
             questionLbl.ForeColor = Color.Azure;
-            questionLbl.Location = new Point(31, 312);
+            questionLbl.Location = new Point(41, 322);
             questionLbl.Name = "questionLbl";
-            questionLbl.Size = new Size(547, 62);
+            questionLbl.Size = new Size(518, 62);
             questionLbl.TabIndex = 2;
             questionLbl.Text = "Placeholder text lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem";
             questionLbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -195,12 +196,21 @@
             enemyHpLbl.TabIndex = 4;
             enemyHpLbl.Text = "A szörny élete: 10";
             // 
+            // timerPnl
+            // 
+            timerPnl.BackColor = Color.Red;
+            timerPnl.Location = new Point(41, 581);
+            timerPnl.Name = "timerPnl";
+            timerPnl.Size = new Size(520, 18);
+            timerPnl.TabIndex = 5;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(604, 611);
+            Controls.Add(timerPnl);
             Controls.Add(enemyHpLbl);
             Controls.Add(plrHpLbl);
             Controls.Add(answ4Btn);
@@ -236,5 +246,6 @@
         private Button answ4Btn;
         private Label plrHpLbl;
         private Label enemyHpLbl;
+        private Panel timerPnl;
     }
 }
