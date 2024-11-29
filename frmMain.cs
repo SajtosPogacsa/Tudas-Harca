@@ -6,8 +6,10 @@ namespace Tudás_Harca
     {
         Color btnColor = Color.FromArgb(200, 60, 60, 60);
         frmMenu menu = new();
+        public static String plrName;
         List<Question> questionList = [];
         List<Enemy> enemyList = [];
+        List<Question> prevQ = [];
         Random rnd = new Random();
         Player plr = new(10, 1, "Játékos");
         Question q;
@@ -19,6 +21,7 @@ namespace Tudás_Harca
             timer.Interval = 15000;
             timerHud.Interval = 1000;
             InitializeComponent();
+            plrName = this.menu.name;
             this.Load += FrmMainLoad;
             this.FormClosing += FrmMainFormClosing;
             monsterPbx.BackColor = Color.Transparent;
@@ -73,7 +76,11 @@ namespace Tudás_Harca
                 if (enemyList[0].hp <= 0)
                 {
                     enemyList.RemoveAt(0);
-                    MessageBox.Show($"Sikeresen legyőzted a szörnyet, de még közel sincs vége!");
+                    if (enemyList.Count != 0)
+                    {
+                        MessageBox.Show($"Sikeresen legyőzted a szörnyet, de még közel sincs vége!");
+                    }
+
                 }
             }
             else
@@ -87,7 +94,7 @@ namespace Tudás_Harca
             }
             updateScreen();
             waitQuestion(2000);
-            buttonEnabler();
+
         }
 
         private void FrmMainLoad(object? sender, EventArgs e)
@@ -121,7 +128,7 @@ namespace Tudás_Harca
 
         private void updateScreen()
         {
-            plrHpLbl.Text = $"Az életed: {plr.hp}";
+            plrHpLbl.Text = $"{plrName} élete: {plr.hp}";
             if (enemyList.Count > 0)
             {
                 monsterPbx.ImageLocation = enemyList[0].img;
@@ -141,11 +148,17 @@ namespace Tudás_Harca
                 caption: "Nyertél!",
                 icon: MessageBoxIcon.Asterisk,
                 buttons:MessageBoxButtons.OK);
+            Application.Exit();
         }
 
         private void initQuestion()
         {
-            q = questionList[rnd.Next(questionList.Count)];
+            do
+            {
+                q = questionList[rnd.Next(questionList.Count)];
+            }
+            while (prevQ.Contains(q));
+            
             questionLbl.Text = q.prompt;
             answ1Btn.Text = q.answer1;
             answ1Btn.BackColor = btnColor;
@@ -155,6 +168,7 @@ namespace Tudás_Harca
             answ3Btn.BackColor = btnColor;
             answ4Btn.Text = q.answer4;
             answ4Btn.BackColor = btnColor;
+            prevQ.Add(q);
             TimerUpdate();
         }
         async private void waitQuestion(int time)
@@ -162,6 +176,7 @@ namespace Tudás_Harca
             await Task.Delay(time);
 
             initQuestion();
+            buttonEnabler();
         }
 
         private void buttonEnabler()

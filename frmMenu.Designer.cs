@@ -33,6 +33,8 @@
             startBtn = new Button();
             ldbBtn = new Button();
             exitBtn = new Button();
+            nameTbx = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // titleLbl
@@ -90,12 +92,30 @@
             exitBtn.Text = "Exit";
             exitBtn.UseVisualStyleBackColor = false;
             // 
+            // nameTbx
+            // 
+            nameTbx.Location = new Point(215, 260);
+            nameTbx.Name = "nameTbx";
+            nameTbx.Size = new Size(200, 23);
+            nameTbx.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(215, 242);
+            label1.Name = "label1";
+            label1.Size = new Size(103, 15);
+            label1.TabIndex = 6;
+            label1.Text = "Add meg a neved!";
+            // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(604, 611);
+            Controls.Add(label1);
+            Controls.Add(nameTbx);
             Controls.Add(exitBtn);
             Controls.Add(ldbBtn);
             Controls.Add(startBtn);
@@ -112,5 +132,7 @@
         private Button startBtn;
         private Button ldbBtn;
         private Button exitBtn;
+        private TextBox nameTbx;
+        private Label label1;
     }
 }
