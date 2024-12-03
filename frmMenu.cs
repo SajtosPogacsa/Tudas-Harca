@@ -13,7 +13,6 @@ namespace Tudás_Harca
     public partial class frmMenu : Form
     {
         public static frmMenu instance;
-        public string name;
         public frmMenu()
         { 
             InitializeComponent();
@@ -30,12 +29,6 @@ namespace Tudás_Harca
 
         private void StartBtnClick(object? sender, EventArgs e)
         {
-            name = nameTbx.Text;
-            if (name == "")
-            {
-                MessageBox.Show("Adj meg egy nevet!");
-                return;
-            }
             frmMain game = new();
             game.Show();
             this.Hide();

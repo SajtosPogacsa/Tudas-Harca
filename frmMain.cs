@@ -1,4 +1,6 @@
-
+using Microsoft.VisualBasic;
+using System.Diagnostics;
+using System.IO;
 
 namespace Tudás_Harca
 {
@@ -6,7 +8,7 @@ namespace Tudás_Harca
     {
         Color btnColor = Color.FromArgb(200, 60, 60, 60);
         frmMenu menu = new();
-        public static String plrName;
+        public string plrName;
         List<Question> questionList = [];
         List<Enemy> enemyList = [];
         List<Question> prevQ = [];
@@ -15,13 +17,13 @@ namespace Tudás_Harca
         Question q;
         System.Windows.Forms.Timer timer = new();
         System.Windows.Forms.Timer timerHud = new();
+        Stopwatch gameTime = new Stopwatch();
 
         public frmMain()
         {
             timer.Interval = 15000;
             timerHud.Interval = 1000;
             InitializeComponent();
-            plrName = this.menu.name;
             this.Load += FrmMainLoad;
             this.FormClosing += FrmMainFormClosing;
             monsterPbx.BackColor = Color.Transparent;
@@ -31,6 +33,7 @@ namespace Tudás_Harca
             answ4Btn.Click += AnswBtnClick;
             timer.Tick += TimerTick;
             timerHud.Tick += TimerHudTick;
+            gameTime.Start();
         }
 
         private void FrmMainFormClosing(object? sender, FormClosingEventArgs e)
@@ -107,8 +110,8 @@ namespace Tudás_Harca
                 questionList.Add(q);
             }
             enemyList.Add(new Enemy("kis haver1", 1, 1, @"Properties\\Resources\\enemy1.png"));
-            enemyList.Add(new Enemy("kis haver2", 3, 2, @"Properties\\Resources\\enemy2.png"));
-            enemyList.Add(new Enemy("nagy haver", 10, 3, @"Properties\\Resources\\pixel boss.png"));
+            enemyList.Add(new Enemy("kis haver2", 1, 2, @"Properties\\Resources\\enemy2.png"));
+            enemyList.Add(new Enemy("nagy haver", 1, 3, @"Properties\\Resources\\pixel boss.png"));
             setupScreen();
             initQuestion();
         }
@@ -143,14 +146,24 @@ namespace Tudás_Harca
 
         private void win()
         {
+            gameTime.Stop();
             MessageBox.Show(
                 text: "Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot!", 
                 caption: "Nyertél!",
                 icon: MessageBoxIcon.Asterisk,
                 buttons:MessageBoxButtons.OK);
+            plrName = Interaction.InputBox("Mi  a neved?");
             Application.Exit();
         }
 
+        private void leaderBoard()
+        {
+            FileStream stream = new FileStream("data.bin", FileMode.Create, FileAccess.Write);
+            BinaryWriter bw = new BinaryWriter(stream);
+            bw.Write(plrName);
+            bw.Write(gameTime.ElapsedMilliseconds);
+            bw.Close();
+        }
         private void initQuestion()
         {
             do
@@ -178,7 +191,6 @@ namespace Tudás_Harca
             initQuestion();
             buttonEnabler();
         }
-
         private void buttonEnabler()
         {
             if (answ1Btn.Enabled) answ1Btn.Enabled = false; else answ1Btn.Enabled = true;
