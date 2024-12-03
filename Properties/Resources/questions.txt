@@ -97,4 +97,35 @@ Melyik mitológiai lény félig ember, félig ló?;Kentaur;Minotaurusz;Szfinx;Sz
 Ki volt a görög mitológiában a kovácsok és tűz istene?;Hermész;Héphaisztosz;Árész;Apolló;Héphaisztosz  
 Melyik lény őrzi az Alvilág kapuját?;Minotaurusz;Kerberosz;Hüdra;Kentaur;Kerberosz  
 Ki volt az északi mitológiában Odin fia?;Loki;Thor;Balder;Fenrir;Thor  
-Melyik istennő volt a görög mitológiában a szerelem és szépség istennője?;Héra;Aphrodité;Pallasz Athéné;Ártemisz;Aphrodité  
+Melyik istennő volt a görög mitológiában a szerelem és szépség istennője?;Héra;Aphrodité;Pallasz Athéné;Ártemisz;Aphrodité
+Melyik étel a legismertebb magyar lecsó alapja?;Paprika;Paradicsom;Káposzta;Burgonya;Paprika
+Mi az a főzési technika, amikor az ételt alacsony hőmérsékleten, hosszú ideig készítik?;Sous vide;Fritőzés;Grillezés;Párolás;Sous vide
+Melyik ételt nevezik "magyar pizza"-nak?;Pörkölt;Lángos;Hortobágyi palacsinta;Túrós csusza;Lángos
+Melyik étel a legismertebb olasz tészta?;Spaghetti;Lasagne;Ravioli;Fusilli;Spaghetti
+Mi a magyar "kocsonya" fő alapanyaga?;Hús;Zöldség;Hal;Gyümölcs;Hús
+Melyik alkoholos ital származik Magyarországról és jellemzően szőlőből készítik?;Pálinka;Bor;Whisky;Rum;Pálinka
+Mi a neve annak a híres francia ételnek, amely főként tojásból, vajból és tejszínből készül?;Omelettes;Quiche;Béarnaise;Crêpes;Omelettes
+Melyik étel a leggyakoribb japán szusival készült étel alapja?;Hal;Zöldség;Tofu;Rizs;Hal
+Melyik zöldséget tartják a "legédesebb" magyar lecsóban?;Paradicsom;Paprika;Padlizsán;Káposzta;Paprika
+Mi a fő alapanyaga a híres francia "ratatouille"-nak?;Burgonya;Tojás;Zöldségek;Hal;Zöldségek
+Ki volt Magyarország első miniszterelnöke?;Lónyay Menyhért;Kossuth Lajos;Tisza Kálmán;Széchenyi István;Kossuth Lajos
+Melyik politikai párt vezette Magyarországot 2010 és 2024 között?;Fidesz;MSZP;Jobbik;LMP;Fidesz
+Ki volt Magyarország elnöke a rendszerváltás idején?;Göncz Árpád;Mádl Ferenc;Schmitt Pál;Áder János;Göncz Árpád
+Ki volt Magyarország miniszterelnöke a 2002-es választások után?;Medgyessy Péter;Horn Gyula;Bajnai Gordon;Gyurcsány Ferenc;Medgyessy Péter
+Melyik politikai párt alapította Orbán Viktor 1989-ben?;Fidesz;MSZP;KDNP;Jobbik;Fidesz
+Ki volt Magyarország miniszterelnöke 1989 és 1994 között?;Horn Gyula;Torgyán József;Antall József;Médgyessy Péter;Horn Gyula
+Mi volt a rendszerváltás egyik fő eseménye Magyarországon 1989-ben?;A szabad választások;A miniszterelnöki választás;A vasfüggöny lebontása;A NATO csatlakozás;A szabad választások
+Mi volt Magyarország hivatalos államformája 1949 és 1989 között?;Népköztársaság;Királyság;Köztársaság;Szocialista állam;Népköztársaság
+Ki volt a legelső magyar miniszterelnök a rendszerváltás után?;Antall József;Horn Gyula;Torgyán József;Kiss Péter;Antall József
+Melyik magyar politikai párt álláspontja szoros kapcsolatban áll a kereszténydemokráciával?;KDNP;Fidesz;MSZP;Jobbik;KDNP
+Mi az a programozási nyelv, amelyet a weboldalak fejlesztésére használnak?;HTML;JavaScript;CSS;Python;HTML
+Mi az a számítógép része, amely a számításokat végzi?;Processzor;RAM;HDD;Alaplap;Processzor
+Mi a leggyorsabb memória típus a számítógépekben?;RAM;SSD;HDD;CD;RAM
+Mi az a szűk keresztmetszet a hálózati kommunikációban, amit a rendszer sebessége korlátozhat?;Sávszélesség;IP-cím;Port;MAC-cím;Sávszélesség
+Mi az a szoftver, amely az operációs rendszert használó számítógépeken fut és programokat indít?;Alkalmazás;Kernel;Verzió;Firmware;Alkalmazás
+Mi a neve a legnagyobb keresőmotornak az interneten?;Google;Bing;Yahoo;DuckDuckGo;Google
+Mi az a kód, amelyet a számítógépek használnak a bináris számok ábrázolására?;ASCII;UTF-8;HTML;Python;ASCII
+Mi az a számítógépes programozási nyelv, amelyet a weboldalak dinamikus tartalmának megjelenítésére használnak?;JavaScript;Java;Python;C++;JavaScript
+Mi az a rendszer, amely a felhasználó számára lehetővé teszi a számítógépes hardverek vezérlését?;Operációs rendszer;Vírusírtó;Tűzfal;Alkalmazás;Operációs rendszer
+Mi az a hálózati eszköz, amely a különböző számítógépek közötti kapcsolatot vezérli?;Router;Switch;Modem;Hub;Router
+
