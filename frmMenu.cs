@@ -25,8 +25,14 @@ namespace Tudás_Harca
 
         private void ExitBtnClick(object? sender, EventArgs e)
         {
-            Application.Exit();
+            var result = MessageBox.Show("Biztosan ki akarsz lépni?", "Kilépés megerősítése", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
+
 
         private void StartBtnClick(object? sender, EventArgs e)
         {
