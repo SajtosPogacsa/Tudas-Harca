@@ -20,6 +20,23 @@ namespace Tudás_Harca
             titleLbl.BackColor = Color.FromArgb(200, 60, 60, 60);
             startBtn.Click += StartBtnClick;
             exitBtn.Click += ExitBtnClick;
+            ldbBtn.Click += LdbBtnClick;
+        }
+
+        private void LdbBtnClick(object? sender, EventArgs e)
+        {
+            ldbLbx.Items.Clear();
+            FileStream fs = new("data.bin", FileMode.Open);
+            if (fs.Length == 0) return;
+            ldbLbx.Visible = true;
+            using(BinaryReader br = new BinaryReader(fs))
+            {
+                while (br.PeekChar() != -1)
+                {
+                    ldbLbx.Items.Add($"{br.ReadString()} {br.ReadInt32()}s");
+                }
+ 
+            }
         }
 
         private void ExitBtnClick(object? sender, EventArgs e)

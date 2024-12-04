@@ -33,8 +33,7 @@
             startBtn = new Button();
             ldbBtn = new Button();
             exitBtn = new Button();
-            nameTbx = new TextBox();
-            label1 = new Label();
+            ldbLbx = new ListBox();
             SuspendLayout();
             // 
             // titleLbl
@@ -43,7 +42,7 @@
             titleLbl.BackColor = Color.FromArgb(244, 244, 244);
             titleLbl.Font = new Font("Segoe UI", 32F);
             titleLbl.ForeColor = SystemColors.HighlightText;
-            titleLbl.Location = new Point(186, 70);
+            titleLbl.Location = new Point(181, 68);
             titleLbl.Name = "titleLbl";
             titleLbl.Size = new Size(259, 59);
             titleLbl.TabIndex = 0;
@@ -92,21 +91,16 @@
             exitBtn.Text = "Exit";
             exitBtn.UseVisualStyleBackColor = false;
             // 
-            // nameTbx
+            // ldbLbx
             // 
-            nameTbx.Location = new Point(215, 260);
-            nameTbx.Name = "nameTbx";
-            nameTbx.Size = new Size(200, 23);
-            nameTbx.TabIndex = 5;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(215, 242);
-            label1.Name = "label1";
-            label1.Size = new Size(103, 15);
-            label1.TabIndex = 6;
-            label1.Text = "Add meg a neved!";
+            ldbLbx.BackColor = SystemColors.Window;
+            ldbLbx.FormattingEnabled = true;
+            ldbLbx.ItemHeight = 15;
+            ldbLbx.Location = new Point(215, 161);
+            ldbLbx.Name = "ldbLbx";
+            ldbLbx.Size = new Size(200, 154);
+            ldbLbx.TabIndex = 5;
+            ldbLbx.Visible = false;
             // 
             // frmMenu
             // 
@@ -114,8 +108,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(604, 611);
-            Controls.Add(label1);
-            Controls.Add(nameTbx);
+            Controls.Add(ldbLbx);
             Controls.Add(exitBtn);
             Controls.Add(ldbBtn);
             Controls.Add(startBtn);
@@ -132,7 +125,6 @@
         private Button startBtn;
         private Button ldbBtn;
         private Button exitBtn;
-        private TextBox nameTbx;
-        private Label label1;
+        private ListBox ldbLbx;
     }
 }

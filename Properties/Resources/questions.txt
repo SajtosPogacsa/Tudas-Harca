@@ -128,4 +128,3 @@ Mi az a kód, amelyet a számítógépek használnak a bináris számok ábrázo
 Mi az a számítógépes programozási nyelv, amelyet a weboldalak dinamikus tartalmának megjelenítésére használnak?;JavaScript;Java;Python;C++;JavaScript
 Mi az a rendszer, amely a felhasználó számára lehetővé teszi a számítógépes hardverek vezérlését?;Operációs rendszer;Vírusírtó;Tűzfal;Alkalmazás;Operációs rendszer
 Mi az a hálózati eszköz, amely a különböző számítógépek közötti kapcsolatot vezérli?;Router;Switch;Modem;Hub;Router
-

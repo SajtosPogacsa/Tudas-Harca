@@ -148,21 +148,25 @@ namespace Tudás_Harca
         {
             gameTime.Stop();
             MessageBox.Show(
-                text: "Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot!", 
+                text: $"Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot! {gameTime.ElapsedMilliseconds / 1000}s", 
                 caption: "Nyertél!",
                 icon: MessageBoxIcon.Asterisk,
                 buttons:MessageBoxButtons.OK);
             plrName = Interaction.InputBox("Mi  a neved?");
+            leaderBoard();
             Application.Exit();
-        }
+        } 
 
         private void leaderBoard()
         {
-            FileStream stream = new FileStream("data.bin", FileMode.Create, FileAccess.Write);
-            BinaryWriter bw = new BinaryWriter(stream);
-            bw.Write(plrName);
-            bw.Write(gameTime.ElapsedMilliseconds);
-            bw.Close();
+            FileStream fs = new FileStream("data.bin", FileMode.Open);
+            
+            using (BinaryWriter bw = new BinaryWriter(fs))
+            {
+                fs.Position = fs.Length;
+                bw.Write(plrName.ToString());
+                bw.Write(((int)gameTime.ElapsedMilliseconds));
+            }
         }
         private void initQuestion()
         {
