@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             charPbx = new PictureBox();
             monsterPbx = new PictureBox();
             perk1Btn = new Button();
@@ -47,6 +48,8 @@
             // 
             // charPbx
             // 
+            charPbx.BackColor = Color.Transparent;
+            charPbx.BackgroundImage = (Image)resources.GetObject("charPbx.BackgroundImage");
             charPbx.ImageLocation = "Properties\\\\Resources\\\\pixel jo.png\"";
             charPbx.Location = new Point(41, 12);
             charPbx.Name = "charPbx";
@@ -209,6 +212,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(604, 611);
             Controls.Add(timerPnl);
             Controls.Add(enemyHpLbl);

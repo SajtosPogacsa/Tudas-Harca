@@ -116,6 +116,9 @@ namespace Tudás_Harca
             initQuestion();
         }
 
+
+
+
         private void setupScreen()
         {
             charPbx.ImageLocation = @"Properties\\Resources\\pixel jo.png";
