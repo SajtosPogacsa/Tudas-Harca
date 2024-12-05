@@ -19,7 +19,7 @@ namespace Tudás_Harca
         System.Windows.Forms.Timer timer = new();
         System.Windows.Forms.Timer timerHud = new();
         Stopwatch gameTime = new Stopwatch();
-
+                                      
         public frmMain()
         {
             timer.Interval = 15000;
@@ -83,7 +83,7 @@ namespace Tudás_Harca
                     enemyList.RemoveAt(0);
                     if (enemyList.Count != 0)
                     {
-                        MessageBox.Show($"Sikeresen legyőzted a szörnyet, de még közel sincs vége!");
+                        MessageBox.Show($"Sikeresen legyőzted a szörnyet, de még közel sincs vége a harcodnak!");
                     }
 
                 }
@@ -153,11 +153,11 @@ namespace Tudás_Harca
         {
             gameTime.Stop();
             MessageBox.Show(
-                text: $"Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot! {gameTime.ElapsedMilliseconds / 1000}s", 
-                caption: "Nyertél!",
+                text: $"Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot! \nEnnyi idő alatt mentetted meg a világot: {gameTime.ElapsedMilliseconds / 1000}s", 
+                caption: "Ügyes vagy, nyertél!",
                 icon: MessageBoxIcon.Asterisk,
                 buttons:MessageBoxButtons.OK);
-            plrName = Interaction.InputBox("Mi  a neved?");
+            plrName = Interaction.InputBox("Mi a neved dicső harcos?");
             leaderBoard();
             Application.Exit();
         } 
