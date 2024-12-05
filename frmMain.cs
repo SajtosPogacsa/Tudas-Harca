@@ -94,7 +94,7 @@ namespace Tudás_Harca
                 plr.takeDamage(enemyList[0].dmg);
                 if (plr.hp <= 0)
                 {
-                    MessageBox.Show("Vesztettél. A szörnyek átvették az uralmat a világ felett!");
+                    MessageBox.Show("Vesztettél. A szörnyek átvették az uralmat a világ felett!👹");
                 }
             }
             updateScreen();
