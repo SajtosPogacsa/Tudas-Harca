@@ -7,15 +7,20 @@ namespace Tudás_Harca
     public partial class frmMain : Form
     {
         Color btnColor = Color.FromArgb(200, 60, 60, 60);
-        frmMenu menu = new();
+        const int timeBetweenRounds = 1000;
+        Player plr = new(10, 1, "Játékos");
+
         public string plrName;
+        Question q;
+        const string resources = @"Properties\\Resources\\";
+
+
+        frmMenu menu = new();
         List<Question> questionList = [];
         List<Enemy> enemyList = [];
         List<Question> prevQ = [];
         Random rnd = new Random();
-        Player plr = new(10, 1, "Játékos");
-        Question q;
-        const String resources = @"Properties\\Resources\\";
+
         System.Windows.Forms.Timer timer = new();
         System.Windows.Forms.Timer timerHud = new();
         Stopwatch gameTime = new Stopwatch();
@@ -26,7 +31,6 @@ namespace Tudás_Harca
             timerHud.Interval = 1000;
             InitializeComponent();
             this.Load += FrmMainLoad;
-            this.FormClosing += FrmMainFormClosing;
             monsterPbx.BackColor = Color.Transparent;
             answ1Btn.Click += AnswBtnClick;
             answ2Btn.Click += AnswBtnClick;
@@ -37,10 +41,6 @@ namespace Tudás_Harca
             gameTime.Start();
         }
 
-        private void FrmMainFormClosing(object? sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void FrmMainFormClosed(object? sender, FormClosedEventArgs e)
         {
@@ -53,7 +53,7 @@ namespace Tudás_Harca
             MessageBox.Show("Kifutottál az időből, a szörny megtámadott");
             plr.takeDamage(enemyList[0].dmg);
             updateScreen();
-            waitQuestion(2000);
+            waitQuestion(timeBetweenRounds);
         }
 
         private void TimerHudTick(object? sender, EventArgs e)
@@ -98,7 +98,7 @@ namespace Tudás_Harca
                 }
             }
             updateScreen();
-            waitQuestion(2000);
+            waitQuestion(timeBetweenRounds);
 
         }
 
@@ -117,9 +117,6 @@ namespace Tudás_Harca
             setupScreen();
             initQuestion();
         }
-
-
-
 
         private void setupScreen()
         {
@@ -159,7 +156,7 @@ namespace Tudás_Harca
                 buttons:MessageBoxButtons.OK);
             plrName = Interaction.InputBox("Mi  a neved?");
             leaderBoard();
-            Application.Exit();
+            this.Close();
         } 
 
         private void leaderBoard()

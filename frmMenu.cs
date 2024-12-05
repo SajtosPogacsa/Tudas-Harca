@@ -12,6 +12,7 @@ namespace Tudás_Harca
 {
     public partial class frmMenu : Form
     {
+        static frmMain game = new();
         public frmMenu()
         { 
             InitializeComponent();
@@ -19,8 +20,14 @@ namespace Tudás_Harca
             startBtn.Click += StartBtnClick;
             exitBtn.Click += ExitBtnClick;
             ldbBtn.Click += LdbBtnClick;
+
         }
 
+        private void GameFormClosing(object? sender, FormClosingEventArgs e)
+        {
+            this.Show();
+            game = new();
+        }
 
         private void LdbBtnClick(object? sender, EventArgs e)
         {
@@ -33,7 +40,6 @@ namespace Tudás_Harca
             catch (Exception)
             {
                 fs = new("data.bin", FileMode.CreateNew);
-                throw;
             }
 
 
@@ -66,9 +72,11 @@ namespace Tudás_Harca
 
         private void StartBtnClick(object? sender, EventArgs e)
         {
-            frmMain game = new();
             game.Show();
+            game.FormClosing += GameFormClosing;
             this.Hide();
         }
+
+        
     }
 }
