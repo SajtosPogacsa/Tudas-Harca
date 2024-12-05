@@ -12,28 +12,42 @@ namespace Tudás_Harca
 {
     public partial class frmMenu : Form
     {
-        public static frmMenu instance;
         public frmMenu()
         { 
             InitializeComponent();
-            instance = this;
             titleLbl.BackColor = Color.FromArgb(200, 60, 60, 60);
             startBtn.Click += StartBtnClick;
             exitBtn.Click += ExitBtnClick;
             ldbBtn.Click += LdbBtnClick;
         }
 
+
         private void LdbBtnClick(object? sender, EventArgs e)
         {
             ldbLbx.Items.Clear();
-            FileStream fs = new("data.bin", FileMode.Open);
-            if (fs.Length == 0) return;
+            FileStream fs;
+            try
+            {
+                fs = new("data.bin", FileMode.Open);
+            }
+            catch (Exception)
+            {
+                fs = new("data.bin", FileMode.CreateNew);
+                throw;
+            }
+
+
+            if (fs.Length == 0)
+            {
+                fs.Close();
+                return;
+            };
             ldbLbx.Visible = true;
             using(BinaryReader br = new BinaryReader(fs))
             {
                 while (br.PeekChar() != -1)
                 {
-                    ldbLbx.Items.Add($"{br.ReadString()} {br.ReadInt32()}s");
+                    ldbLbx.Items.Add($"{br.ReadString()} {br.ReadInt32() / 1000}s");
                 }
  
             }
