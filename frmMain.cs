@@ -15,6 +15,7 @@ namespace Tudás_Harca
         Random rnd = new Random();
         Player plr = new(10, 1, "Játékos");
         Question q;
+        const String resources = @"Properties\\Resources\\";
         System.Windows.Forms.Timer timer = new();
         System.Windows.Forms.Timer timerHud = new();
         Stopwatch gameTime = new Stopwatch();
@@ -48,6 +49,7 @@ namespace Tudás_Harca
 
         private void TimerTick(object? sender, EventArgs e)
         {
+            buttonEnabler();
             MessageBox.Show("Kifutottál az időből, a szörny megtámadott");
             plr.takeDamage(enemyList[0].dmg);
             updateScreen();
@@ -102,16 +104,16 @@ namespace Tudás_Harca
 
         private void FrmMainLoad(object? sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader(@"Properties\\Resources\\questions.txt");
+            StreamReader sr = new StreamReader($@"{resources}\\questions.txt");
             while (!sr.EndOfStream) 
             {
                 String[] data = sr.ReadLine().Split(";");
                 Question q = new Question(data[0], data[1], data[2], data[3], data[4], data[5]);
                 questionList.Add(q);
             }
-            enemyList.Add(new Enemy("kis haver1", 1, 1, @"Properties\\Resources\\enemy1.png"));
-            enemyList.Add(new Enemy("kis haver2", 1, 2, @"Properties\\Resources\\enemy2.png"));
-            enemyList.Add(new Enemy("nagy haver", 1, 3, @"Properties\\Resources\\pixel boss.png"));
+            enemyList.Add(new Enemy("kis haver1", 1, 1, $@"{resources}\\enemy1.png"));
+            enemyList.Add(new Enemy("kis haver2", 1, 2, $@"{resources}\\enemy2.png"));
+            enemyList.Add(new Enemy("nagy haver", 1, 3, $@"{resources}\\pixel boss.png"));
             setupScreen();
             initQuestion();
         }
@@ -121,7 +123,7 @@ namespace Tudás_Harca
 
         private void setupScreen()
         {
-            charPbx.ImageLocation = @"Properties\\Resources\\pixel jo.png";
+            charPbx.ImageLocation = $@"{resources}\\pixel jo.png";
             questionLbl.BackColor = Color.FromArgb(168, 60, 60, 60);
             enemyHpLbl.BackColor = Color.FromArgb(168, 60, 60, 60);
             plrHpLbl.BackColor = Color.FromArgb(168,60,60,60);
