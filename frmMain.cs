@@ -31,20 +31,39 @@ namespace Tudás_Harca
             timerHud.Interval = 1000;
             InitializeComponent();
             this.Load += FrmMainLoad;
+            this.FormClosed += FrmMainFormClosed;
             monsterPbx.BackColor = Color.Transparent;
             answ1Btn.Click += AnswBtnClick;
             answ2Btn.Click += AnswBtnClick;
             answ3Btn.Click += AnswBtnClick;
             answ4Btn.Click += AnswBtnClick;
+
             timer.Tick += TimerTick;
             timerHud.Tick += TimerHudTick;
+            gameTime.Reset();
             gameTime.Start();
-        }
 
+            perk2Btn.Click += Perk2BtnClick;
+            perk3Btn.Click += Perk3BtnClick;
+        }
 
         private void FrmMainFormClosed(object? sender, FormClosedEventArgs e)
         {
-            throw new NotImplementedException();
+            timer.Stop();
+            timerHud.Stop();
+            gameTime.Stop();
+        }
+
+        private void Perk2BtnClick(object? sender, EventArgs e)
+        {
+            enemyList[0].doubleDmg = true;
+            perk2Btn.Enabled = false;
+        }
+
+        private void Perk3BtnClick(object? sender, EventArgs e)
+        {
+            plr.shield = true;
+            perk3Btn.Enabled = false;
         }
 
         private void TimerTick(object? sender, EventArgs e)
@@ -112,8 +131,8 @@ namespace Tudás_Harca
                 questionList.Add(q);
             }
             enemyList.Add(new Enemy("kis haver1", 1, 1, $@"{resources}\\enemy1.png"));
-            enemyList.Add(new Enemy("kis haver2", 1, 2, $@"{resources}\\enemy2.png"));
-            enemyList.Add(new Enemy("nagy haver", 1, 3, $@"{resources}\\pixel boss.png"));
+            enemyList.Add(new Enemy("kis haver2", 2, 2, $@"{resources}\\enemy2.png"));
+            enemyList.Add(new Enemy("nagy haver", 10, 3, $@"{resources}\\pixel boss.png"));
             setupScreen();
             initQuestion();
         }
@@ -129,7 +148,6 @@ namespace Tudás_Harca
             perk3Btn.BackColor = btnColor;
             updateScreen();
         }
-
 
         private void updateScreen()
         {
@@ -170,6 +188,7 @@ namespace Tudás_Harca
                 bw.Write(((int)gameTime.ElapsedMilliseconds));
             }
         }
+
         private void initQuestion()
         {
             do
@@ -190,6 +209,7 @@ namespace Tudás_Harca
             prevQ.Add(q);
             TimerUpdate();
         }
+
         async private void waitQuestion(int time)
         {
             await Task.Delay(time);
@@ -197,6 +217,7 @@ namespace Tudás_Harca
             initQuestion();
             buttonEnabler();
         }
+
         private void buttonEnabler()
         {
             if (answ1Btn.Enabled) answ1Btn.Enabled = false; else answ1Btn.Enabled = true;
@@ -204,5 +225,6 @@ namespace Tudás_Harca
             if (answ3Btn.Enabled) answ3Btn.Enabled = false; else answ3Btn.Enabled = true;
             if (answ4Btn.Enabled) answ4Btn.Enabled = false; else answ4Btn.Enabled = true;
         }
+
     }
 }

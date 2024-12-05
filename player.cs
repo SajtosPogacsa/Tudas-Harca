@@ -13,6 +13,9 @@ namespace Tudás_Harca
         public int dmg { get; set; }
         public string name { get; set; }
 
+        public bool shield = false;
+        public bool dmgUp = false;
+
         public Player(int _hp, int _dmg, string _name)
         {
             hp = _hp;
@@ -22,7 +25,15 @@ namespace Tudás_Harca
 
         public void takeDamage(int dmgTaken)
         {
-            this.hp -= dmgTaken;
+            if (!shield)
+            {
+                this.hp -= dmgTaken;
+            }
+            else
+            {
+                this.shield = false;
+            }
+
         }
     }
 }
