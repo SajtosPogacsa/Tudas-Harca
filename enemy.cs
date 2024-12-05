@@ -13,6 +13,8 @@ namespace Tudás_Harca
         public int dmg { get; set; }
         public string img { get; set; }
 
+        public bool doubleDmg = false;
+
         public Enemy(string _name, int _hp, int _dmg, string _img)
         {
             this.name = _name;
@@ -23,7 +25,15 @@ namespace Tudás_Harca
 
         public void takeDamage(int dmgTaken)
         {
-            this.hp -= dmgTaken;
+            if (doubleDmg)
+            {
+                this.hp -= dmgTaken * 2;
+                doubleDmg = false;
+            }
+            else
+            {
+                this.hp -= dmgTaken;
+            }
         }
     }
 }
