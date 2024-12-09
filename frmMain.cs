@@ -131,8 +131,8 @@ namespace Tudás_Harca
                 questionList.Add(q);
             }
             enemyList.Add(new Enemy("kis haver1", 1, 1, $@"{resources}\\enemy1.png"));
-            enemyList.Add(new Enemy("kis haver2", 2, 2, $@"{resources}\\enemy2.png"));
-            enemyList.Add(new Enemy("nagy haver", 10, 3, $@"{resources}\\pixel boss.png"));
+            enemyList.Add(new Enemy("kis haver2", 1, 2, $@"{resources}\\enemy2.png"));
+            enemyList.Add(new Enemy("nagy haver", 1, 3, $@"{resources}\\pixel boss.png"));
             setupScreen();
             initQuestion();
         }
@@ -179,7 +179,7 @@ namespace Tudás_Harca
 
         private void leaderBoard()
         {
-            FileStream fs = new FileStream("data.bin", FileMode.Open);
+            FileStream fs = new FileStream("data.bin", FileMode.OpenOrCreate);
             
             using (BinaryWriter bw = new BinaryWriter(fs))
             {
