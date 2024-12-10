@@ -183,6 +183,8 @@ namespace Tudás_Harca
         private void win()
         {
             gameTime.Stop();
+            timer.Stop();
+            timerHud.Stop();
             MessageBox.Show(
                 text: $"Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot! \nEnnyi idő alatt mentetted meg a világot: {gameTime.ElapsedMilliseconds / 1000}s",
                 caption: "Ügyes vagy, nyertél!",
