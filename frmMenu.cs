@@ -61,7 +61,7 @@ namespace Tudás_Harca
 
         private void ExitBtnClick(object? sender, EventArgs e)
         {
-            var result = MessageBox.Show("Biztosan ki akarsz lépni?", "Kilépés megerősítése", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            var result = MessageBox.Show("Felakarod hagyni a harcot?", "Kilépés megerősítése", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {

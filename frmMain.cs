@@ -24,7 +24,7 @@ namespace Tudás_Harca
         System.Windows.Forms.Timer timer = new();
         System.Windows.Forms.Timer timerHud = new();
         Stopwatch gameTime = new Stopwatch();
-                                      
+
         public frmMain()
         {
             timer.Interval = 15000;
@@ -58,12 +58,14 @@ namespace Tudás_Harca
         {
             enemyList[0].doubleDmg = true;
             perk2Btn.Enabled = false;
+            MessageBox.Show("Elhasználtad a dupla sebzés perkedet!");
         }
 
         private void Perk3BtnClick(object? sender, EventArgs e)
         {
             plr.shield = true;
             perk3Btn.Enabled = false;
+            MessageBox.Show("Elhasználtad a pajzs perkedet");
         }
 
         private void TimerTick(object? sender, EventArgs e)
@@ -124,7 +126,7 @@ namespace Tudás_Harca
         private void FrmMainLoad(object? sender, EventArgs e)
         {
             StreamReader sr = new StreamReader($@"{resources}\\questions.txt");
-            while (!sr.EndOfStream) 
+            while (!sr.EndOfStream)
             {
                 String[] data = sr.ReadLine().Split(";");
                 Question q = new Question(data[0], data[1], data[2], data[3], data[4], data[5]);
@@ -142,7 +144,7 @@ namespace Tudás_Harca
             charPbx.ImageLocation = $@"{resources}\\pixel jo.png";
             questionLbl.BackColor = Color.FromArgb(168, 60, 60, 60);
             enemyHpLbl.BackColor = Color.FromArgb(168, 60, 60, 60);
-            plrHpLbl.BackColor = Color.FromArgb(168,60,60,60);
+            plrHpLbl.BackColor = Color.FromArgb(168, 60, 60, 60);
             perk1Btn.BackColor = btnColor;
             perk2Btn.BackColor = btnColor;
             perk3Btn.BackColor = btnColor;
@@ -161,26 +163,26 @@ namespace Tudás_Harca
             {
                 win();
             }
- 
+
         }
 
         private void win()
         {
             gameTime.Stop();
             MessageBox.Show(
-                text: $"Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot! \nEnnyi idő alatt mentetted meg a világot: {gameTime.ElapsedMilliseconds / 1000}s", 
+                text: $"Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot! \nEnnyi idő alatt mentetted meg a világot: {gameTime.ElapsedMilliseconds / 1000}s",
                 caption: "Ügyes vagy, nyertél!",
                 icon: MessageBoxIcon.Asterisk,
-                buttons:MessageBoxButtons.OK);
+                buttons: MessageBoxButtons.OK);
             plrName = Interaction.InputBox("Mi a neved dicső harcos?");
             leaderBoard();
             this.Close();
-        } 
+        }
 
         private void leaderBoard()
         {
             FileStream fs = new FileStream("data.bin", FileMode.OpenOrCreate);
-            
+
             using (BinaryWriter bw = new BinaryWriter(fs))
             {
                 fs.Position = fs.Length;
@@ -196,7 +198,7 @@ namespace Tudás_Harca
                 q = questionList[rnd.Next(questionList.Count)];
             }
             while (prevQ.Contains(q));
-            
+
             questionLbl.Text = q.prompt;
             answ1Btn.Text = q.answer1;
             answ1Btn.BackColor = btnColor;
@@ -226,5 +228,11 @@ namespace Tudás_Harca
             if (answ4Btn.Enabled) answ4Btn.Enabled = false; else answ4Btn.Enabled = true;
         }
 
+        private void perk1Btn_Click(object sender, EventArgs e)
+        {
+            initQuestion();
+            perk1Btn.Enabled = false;
+            MessageBox.Show("Elhasználtad az új kérdés perket!");
+        }
     }
 }

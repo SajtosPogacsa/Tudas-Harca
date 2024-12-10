@@ -78,8 +78,9 @@
             perk1Btn.Name = "perk1Btn";
             perk1Btn.Size = new Size(120, 75);
             perk1Btn.TabIndex = 1;
-            perk1Btn.Text = "Felezés";
+            perk1Btn.Text = "Új Kérdés";
             perk1Btn.UseVisualStyleBackColor = false;
+            perk1Btn.Click += perk1Btn_Click;
             // 
             // perk2Btn
             // 

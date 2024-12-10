@@ -60,7 +60,7 @@
             startBtn.Name = "startBtn";
             startBtn.Size = new Size(200, 50);
             startBtn.TabIndex = 4;
-            startBtn.Text = "Start Game";
+            startBtn.Text = "Harcba vonulás";
             startBtn.UseVisualStyleBackColor = false;
             // 
             // ldbBtn
@@ -74,7 +74,7 @@
             ldbBtn.Name = "ldbBtn";
             ldbBtn.Size = new Size(200, 50);
             ldbBtn.TabIndex = 4;
-            ldbBtn.Text = "LeaderBoard";
+            ldbBtn.Text = "Harcosi ranglétra";
             ldbBtn.UseVisualStyleBackColor = false;
             // 
             // exitBtn
@@ -88,7 +88,7 @@
             exitBtn.Name = "exitBtn";
             exitBtn.Size = new Size(200, 50);
             exitBtn.TabIndex = 4;
-            exitBtn.Text = "Exit";
+            exitBtn.Text = "Kilépés";
             exitBtn.UseVisualStyleBackColor = false;
             // 
             // ldbLbx
