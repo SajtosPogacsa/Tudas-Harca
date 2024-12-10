@@ -89,8 +89,6 @@ namespace Tudás_Harca
             game.Show();
             game.FormClosing += GameFormClosing;
             this.Hide();
-        }
-
-        
+        }        
     }
 }
