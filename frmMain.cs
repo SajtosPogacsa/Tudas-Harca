@@ -10,6 +10,9 @@ namespace Tudás_Harca
         const int timeBetweenRounds = 1000;
         Player plr = new(10, 1, "Játékos");
 
+        const int timerInt = 15000;
+        const int hudInt = 1000;
+
         public string plrName;
         Question q;
         const string resources = @"Properties\\Resources\\";
@@ -27,8 +30,8 @@ namespace Tudás_Harca
 
         public frmMain()
         {
-            timer.Interval = 15000;
-            timerHud.Interval = 1000;
+            timer.Interval = timerInt;
+            timerHud.Interval = hudInt;
             InitializeComponent();
             this.Load += FrmMainLoad;
             this.FormClosed += FrmMainFormClosed;
@@ -52,6 +55,13 @@ namespace Tudás_Harca
             timer.Stop();
             timerHud.Stop();
             gameTime.Stop();
+        }
+
+        private void perk1Btn_Click(object sender, EventArgs e)
+        {
+            initQuestion();
+            perk1Btn.Enabled = false;
+            MessageBox.Show("Elhasználtad az új kérdés perket!");
         }
 
         private void Perk2BtnClick(object? sender, EventArgs e)
@@ -84,6 +94,10 @@ namespace Tudás_Harca
 
         private void TimerUpdate()
         {
+            timer.Interval = timerInt;
+            timerHud.Interval = hudInt;
+            timer.Stop();
+            timerHud.Stop();
             timer.Start();
             timerHud.Start();
             timerPnl.Width = 520;
@@ -228,11 +242,6 @@ namespace Tudás_Harca
             if (answ4Btn.Enabled) answ4Btn.Enabled = false; else answ4Btn.Enabled = true;
         }
 
-        private void perk1Btn_Click(object sender, EventArgs e)
-        {
-            initQuestion();
-            perk1Btn.Enabled = false;
-            MessageBox.Show("Elhasználtad az új kérdés perket!");
-        }
+
     }
 }
