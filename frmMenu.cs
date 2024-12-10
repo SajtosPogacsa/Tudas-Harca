@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace Tudás_Harca
 {
+
+
     public partial class frmMenu : Form
     {
         static frmMain game = new();
@@ -49,14 +51,22 @@ namespace Tudás_Harca
                 return;
             };
             ldbLbx.Visible = true;
+            List<LdbData> ldbList = [];
             using(BinaryReader br = new BinaryReader(fs))
             {
                 while (br.PeekChar() != -1)
                 {
-                    ldbLbx.Items.Add($"{br.ReadString()} {br.ReadInt32() / 1000}s");
+                    LdbData data = new(br.ReadString(), br.ReadInt32() / 1000);
+                    ldbList.Add(data);
                 }
- 
             }
+            ldbList = ldbList.OrderBy(x => x.time).ToList();
+
+            foreach (LdbData item in ldbList)
+            {
+                ldbLbx.Items.Add($"{item.name} {item.time}s");
+            }
+
         }
 
         private void ExitBtnClick(object? sender, EventArgs e)
