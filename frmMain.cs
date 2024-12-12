@@ -190,7 +190,7 @@ namespace Tudás_Harca
                 icon: MessageBoxIcon.Asterisk,
                 buttons: MessageBoxButtons.OK);
 
-            this.BackgroundImage = Image.FromFile($@"C:\Users\ny20Bhornyáká\source\repos\Tudas - Harca\Properties\Resources\win.png"); //ITT EZT MEG KELL OLDANI MÉG, MERT MOST NEM JÓ!!!!!!
+            this.BackgroundImage = Image.FromFile($@"{resources}\win.png"); 
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
         
