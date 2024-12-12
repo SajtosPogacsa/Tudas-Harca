@@ -129,7 +129,8 @@ namespace Tudás_Harca
                 plr.takeDamage(enemyList[0].dmg);
                 if (plr.hp <= 0)
                 {
-                    MessageBox.Show("Vesztettél. A szörnyek átvették az uralmat a világ felett!👹");
+                    MessageBox.Show("Vesztettél. A szörnyek átvették az uralmat a világ felett!👹");                    
+                    this.Close();
                 }
             }
             updateScreen();
@@ -183,18 +184,22 @@ namespace Tudás_Harca
         private void win()
         {
             gameTime.Stop();
-            timer.Stop();
-            timerHud.Stop();
             MessageBox.Show(
                 text: $"Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot! \nEnnyi idő alatt mentetted meg a világot: {gameTime.ElapsedMilliseconds / 1000}s",
                 caption: "Ügyes vagy, nyertél!",
                 icon: MessageBoxIcon.Asterisk,
-                buttons: MessageBoxButtons.OK);            
+                buttons: MessageBoxButtons.OK);
 
-            plrName = Interaction.InputBox("Mi a neved dicső harcos?");
+            this.BackgroundImage = Image.FromFile($@"C:\Users\ny20Bhornyáká\source\repos\Tudas - Harca\Properties\Resources\win.png"); //ITT EZT MEG KELL OLDANI MÉG, MERT MOST NEM JÓ!!!!!!
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+
+        
+
+        plrName = Interaction.InputBox("Mi a neved dicső harcos?");
             leaderBoard();
             this.Close();
         }
+
 
         private void leaderBoard()
         {
