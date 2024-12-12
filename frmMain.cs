@@ -4,7 +4,7 @@ using System.IO;
 
 namespace Tudás_Harca
 {
-    public partial class frmMain : Form
+    public partial class FrmMain : Form
     {
         Color btnColor = Color.FromArgb(200, 60, 60, 60);
         const int timeBetweenRounds = 1000;
@@ -28,7 +28,7 @@ namespace Tudás_Harca
         System.Windows.Forms.Timer timerHud = new();
         Stopwatch gameTime = new Stopwatch();
 
-        public frmMain()
+        public FrmMain()
         {
             timer.Interval = timerInt;
             timerHud.Interval = hudInt;
@@ -187,7 +187,8 @@ namespace Tudás_Harca
                 text: $"Gratulálok sikeresen megölted a gonosz csontvázat, ezzel megmentve a világot! \nEnnyi idő alatt mentetted meg a világot: {gameTime.ElapsedMilliseconds / 1000}s",
                 caption: "Ügyes vagy, nyertél!",
                 icon: MessageBoxIcon.Asterisk,
-                buttons: MessageBoxButtons.OK);
+                buttons: MessageBoxButtons.OK);            
+
             plrName = Interaction.InputBox("Mi a neved dicső harcos?");
             leaderBoard();
             this.Close();

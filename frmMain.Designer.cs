@@ -1,6 +1,6 @@
 ﻿namespace Tudás_Harca
 {
-    partial class frmMain
+    partial class FrmMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             charPbx = new PictureBox();
             monsterPbx = new PictureBox();
             perk1Btn = new Button();

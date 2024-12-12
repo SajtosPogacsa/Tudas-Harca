@@ -14,7 +14,7 @@ namespace Tudás_Harca
 
     public partial class frmMenu : Form
     {
-        static frmMain game = new();
+        static FrmMain game = new();
         public frmMenu()
         { 
             InitializeComponent();
