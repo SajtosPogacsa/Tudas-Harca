@@ -1,14 +1,15 @@
 using Microsoft.VisualBasic;
 using System.Diagnostics;
 using System.IO;
+using Timer = System.Windows.Forms.Timer;
 
 namespace Tudás_Harca
 {
-    public partial class frmMain : Form
+    public partial class FrmMain : Form
     {
         Color btnColor = Color.FromArgb(200, 60, 60, 60);
         const int timeBetweenRounds = 1000;
-        Player plr = new(10, 1, "Játékos");
+        Player plr;
 
         const int timerInt = 15000;
         const int hudInt = 1000;
@@ -17,22 +18,20 @@ namespace Tudás_Harca
         Question q;
         const string resources = @"Properties\\Resources\\";
 
-
-        frmMenu menu = new();
         List<Question> questionList = [];
         List<Enemy> enemyList = [];
         List<Question> prevQ = [];
         Random rnd = new Random();
 
-        System.Windows.Forms.Timer timer = new();
-        System.Windows.Forms.Timer timerHud = new();
+        Timer timer = new();
+        Timer timerHud = new();
         Stopwatch gameTime = new Stopwatch();
 
-        public frmMain()
+        public FrmMain()
         {
-            timer.Interval = timerInt;
-            timerHud.Interval = hudInt;
             InitializeComponent();
+            plr  = new(10, 1, "Játékos");
+
             this.Load += FrmMainLoad;
             this.FormClosed += FrmMainFormClosed;
             monsterPbx.BackColor = Color.Transparent;
@@ -40,14 +39,18 @@ namespace Tudás_Harca
             answ2Btn.Click += AnswBtnClick;
             answ3Btn.Click += AnswBtnClick;
             answ4Btn.Click += AnswBtnClick;
+            timer.Interval = timerInt;
+            timerHud.Interval = hudInt;
 
-            timer.Tick += TimerTick;
-            timerHud.Tick += TimerHudTick;
             gameTime.Reset();
             gameTime.Start();
 
+            timer.Tick += TimerTick;
+            timerHud.Tick += TimerHudTick;
+
             perk2Btn.Click += Perk2BtnClick;
             perk3Btn.Click += Perk3BtnClick;
+
         }
 
         private void FrmMainFormClosed(object? sender, FormClosedEventArgs e)
@@ -139,6 +142,7 @@ namespace Tudás_Harca
 
         private void FrmMainLoad(object? sender, EventArgs e)
         {
+
             StreamReader sr = new StreamReader($@"{resources}\\questions.txt");
             while (!sr.EndOfStream)
             {
@@ -150,6 +154,8 @@ namespace Tudás_Harca
             enemyList.Add(new Enemy("kis haver2", 1, 2, $@"{resources}\\enemy2.png"));
             enemyList.Add(new Enemy("nagy haver", 1, 3, $@"{resources}\\pixel boss.png"));
             setupScreen();
+
+
             initQuestion();
         }
 
@@ -192,6 +198,10 @@ namespace Tudás_Harca
                 buttons: MessageBoxButtons.OK);
             plrName = Interaction.InputBox("Mi a neved dicső harcos?");
             leaderBoard();
+            timerHud.Enabled = false;
+            timer.Enabled = false;
+            timer.Tick -= TimerTick;
+            timer.Tick -= TimerHudTick;
             this.Close();
         }
 

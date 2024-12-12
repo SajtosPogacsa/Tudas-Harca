@@ -12,10 +12,10 @@ namespace Tudás_Harca
 {
 
 
-    public partial class frmMenu : Form
+    public partial class FrmMenu : Form
     {
-        static frmMain game = new();
-        public frmMenu()
+        static FrmMain game = new();
+        public FrmMenu()
         { 
             InitializeComponent();
             titleLbl.BackColor = Color.FromArgb(200, 60, 60, 60);
@@ -28,7 +28,6 @@ namespace Tudás_Harca
         private void GameFormClosing(object? sender, FormClosingEventArgs e)
         {
             this.Show();
-            game = new();
         }
 
         private void LdbBtnClick(object? sender, EventArgs e)
@@ -86,6 +85,7 @@ namespace Tudás_Harca
 
         private void StartBtnClick(object? sender, EventArgs e)
         {
+            game = new();
             game.Show();
             game.FormClosing += GameFormClosing;
             this.Hide();
