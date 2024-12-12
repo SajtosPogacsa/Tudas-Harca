@@ -75,18 +75,20 @@ namespace Tudás_Harca
 
             if (result == DialogResult.Yes)
             {
-                Application.Exit();
+                var exitResult = MessageBox.Show("Hatalmas csalódás vagy! Biztos, hogy kilépsz?", "Kilépés megerősítése", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (exitResult == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
             }
         }
-
 
         private void StartBtnClick(object? sender, EventArgs e)
         {
             game.Show();
             game.FormClosing += GameFormClosing;
             this.Hide();
-        }
-
-        
+        }        
     }
 }
