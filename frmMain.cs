@@ -196,7 +196,7 @@ namespace Tudás_Harca
                 icon: MessageBoxIcon.Asterisk,
                 buttons: MessageBoxButtons.OK);
 
-            this.BackgroundImage = Image.FromFile($@"{resources}\win.png"); 
+            this.BackgroundImage = Image.FromFile(resources + "winKep.png"); 
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
         
