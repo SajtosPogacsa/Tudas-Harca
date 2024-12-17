@@ -136,6 +136,7 @@ namespace Tudás_Harca
                     this.Close();
                 }
             }
+            plr.shield = false;
             updateScreen();
             waitQuestion(timeBetweenRounds);
 
@@ -152,8 +153,8 @@ namespace Tudás_Harca
                 questionList.Add(q);
             }
             enemyList.Add(new Enemy("kis haver1", 1, 1, $@"{resources}\\enemy1.png"));
-            enemyList.Add(new Enemy("kis haver2", 1, 2, $@"{resources}\\enemy2.png"));
-            enemyList.Add(new Enemy("nagy haver", 1, 3, $@"{resources}\\pixel boss.png"));
+            enemyList.Add(new Enemy("kis haver2", 3, 2, $@"{resources}\\enemy2.png"));
+            enemyList.Add(new Enemy("nagy haver", 10, 3, $@"{resources}\\pixel boss.png"));
             setupScreen();
 
 
@@ -196,7 +197,7 @@ namespace Tudás_Harca
                 icon: MessageBoxIcon.Asterisk,
                 buttons: MessageBoxButtons.OK);
 
-            this.BackgroundImage = Image.FromFile($@"{resources}\\winKép.png"); 
+            this.BackgroundImage = Image.FromFile($@"{resources}\\winKep.png"); 
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
         

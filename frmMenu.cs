@@ -63,7 +63,7 @@ namespace Tudás_Harca
 
             foreach (LdbData item in ldbList)
             {
-                ldbLbx.Items.Add($"{item.name} {item.time}s");
+                ldbLbx.Items.Add($"{item.name}; {item.time}s");
             }
 
         }
