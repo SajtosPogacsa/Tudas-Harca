@@ -102,7 +102,7 @@
             ldbLbx.TabIndex = 5;
             ldbLbx.Visible = false;
             // 
-            // frmMenu
+            // FrmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -113,7 +113,8 @@
             Controls.Add(ldbBtn);
             Controls.Add(startBtn);
             Controls.Add(titleLbl);
-            Name = "frmMenu";
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Name = "FrmMenu";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
